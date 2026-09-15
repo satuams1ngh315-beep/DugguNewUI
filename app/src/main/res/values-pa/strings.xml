@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_home">ਹੋਮ</string>
+    <string name="nav_categories">ਸ਼੍ਰੇਣੀਆਂ</string>
+    <string name="nav_favourites">ਵਿਸ਼ਲਿਸਟ</string>
+    <string name="nav_account">ਪ੍ਰੋਫਾਈਲ</string>
+    <string name="nav_products">ਉਤਪਾਦ</string>
+    <string name="nav_orders">ਆਰਡਰ</string>
+    <string name="nav_available">ਉਪਲਬਧ</string>
+    <string name="nav_active">ਚਾਲੂ</string>
+    <string name="nav_completed">ਮੁਕੰਮਲ</string>
+    <string name="nav_overview">ਸੰਖੇਪ</string>
+    <string name="nav_users">ਵਰਤੋਂਕਾਰ</string>
+    <string name="nav_cart">ਬੈਗ</string>
+
+    <string name="home_search_hint">ਕੁਝ ਵੀ ਖੋਜੋ…</string>
+    <string name="home_image_search">ਫ਼ੋਟੋ ਨਾਲ ਖੋਜੋ</string>
+    <string name="image_search_hint">ਕੈਮਰੇ ਨੂੰ ਪ੍ਰੋਡਕਟ ਵੱਲ ਰੱਖੋ ਅਤੇ ਸ਼ਟਰ ਦਬਾਓ</string>
+    <string name="image_search_reading">ਤੁਹਾਡੀ ਫ਼ੋਟੋ ਵੇਖੀ ਜਾ ਰਹੀ ਹੈ…</string>
+    <string name="image_search_no_match">ਇਹ ਕੀ ਹੈ, ਪਛਾਣ ਨਹੀਂ ਸਕੇ। ਥੋੜ੍ਹਾ ਨੇੜਿਓਂ ਅਤੇ ਚੰਗੀ ਰੋਸ਼ਨੀ ਵਿੱਚ ਦੁਬਾਰਾ ਲਓ।</string>
+    <string name="image_search_gallery">ਫ਼ੋਟੋ ਚੁਣੋ</string>
+    <string name="image_search_permission_waiting">ਕੈਮਰੇ ਦੀ ਇਜਾਜ਼ਤ ਦੀ ਉਡੀਕ…</string>
+    <string name="image_search_permission_needed">ਫ਼ੋਟੋ ਨਾਲ ਖੋਜਣ ਲਈ ਕੈਮਰੇ ਦੀ ਇਜਾਜ਼ਤ ਚਾਹੀਦੀ ਹੈ। ਤੁਸੀਂ ਇਸਨੂੰ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਚਾਲੂ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="search_recent_title">ਹਾਲੀਆ ਖੋਜਾਂ</string>
+    <string name="search_recent_clear">ਸਭ ਹਟਾਓ</string>
+    <string name="search_recent_remove">ਹਟਾਓ</string>
+    <string name="home_search_hint_short">ਖੋਜੋ</string>
+    <string name="home_voice_search">ਬੋਲ ਕੇ ਖੋਜੋ</string>
+    <string name="home_notifications">ਸੂਚਨਾਵਾਂ</string>
+    <string name="home_deliver_to">ਇੱਥੇ ਡਿਲੀਵਰੀ</string>
+    <string name="home_greeting">ਸਤ ਸ੍ਰੀ ਅਕਾਲ %1$s</string>
+    <string name="home_categories">ਸ਼੍ਰੇਣੀਆਂ</string>
+    <string name="home_popular">ਪ੍ਰਸਿੱਧ</string>
+    <string name="home_set_address">ਆਪਣਾ ਡਿਲੀਵਰੀ ਪਤਾ ਜੋੜੋ</string>
+    <string name="home_tab_all">ਸਭ</string>
+    <string name="home_results">ਨਤੀਜੇ</string>
+    <string name="home_products">ਪ੍ਰੋਡਕਟ</string>
+    <string name="home_popular_deals">ਮਸ਼ਹੂਰ ਡੀਲਾਂ</string>
+    <string name="home_empty_title">ਇੱਥੇ ਹਾਲੇ ਕੁਝ ਨਹੀਂ ਹੈ</string>
+    <string name="home_empty_browse">ਜਿਵੇਂ ਹੀ ਕੋਈ ਸੈਲਰ ਪ੍ਰੋਡਕਟ ਜੋੜੇਗਾ, ਉਹ ਇੱਥੇ ਦਿਖਣਗੇ</string>
+    <string name="home_empty_search">ਕੋਈ ਹੋਰ ਸ਼ਬਦ ਅਜ਼ਮਾਓ</string>
+
+    <string name="location_finding">ਤੁਹਾਨੂੰ ਲੱਭ ਰਹੇ ਹਾਂ…</string>
+    <string name="location_current">ਮੌਜੂਦਾ ਟਿਕਾਣਾ</string>
+    <string name="location_wait">ਕਿਰਪਾ ਕਰਕੇ ਉਡੀਕੋ</string>
+    <string name="location_use_current">ਮੇਰਾ ਮੌਜੂਦਾ ਟਿਕਾਣਾ ਵਰਤੋ</string>
+    <string name="location_permission_denied">ਟਿਕਾਣੇ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਮਿਲੀ</string>
+    <string name="location_turn_on">ਪਤਾ ਲੱਭਣ ਲਈ ਲੋਕੇਸ਼ਨ ਚਾਲੂ ਕਰੋ</string>
+    <string name="location_sheet_title">ਡਿਲੀਵਰੀ ਟਿਕਾਣਾ</string>
+    <string name="location_sheet_subtitle">ਤੁਹਾਡਾ ਆਰਡਰ ਕਿੱਥੇ ਲਿਆਈਏ?</string>
+    <string name="location_detect">ਮੇਰਾ ਟਿਕਾਣਾ ਪਤਾ ਕਰੋ</string>
+    <string name="location_tap_retry">ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="location_using_gps">GPS ਤੋਂ</string>
+    <string name="location_detect_again">ਦੁਬਾਰਾ ਪਤਾ ਕਰੋ</string>
+    <string name="location_saved_addresses">ਸੇਵ ਕੀਤੇ ਪਤੇ</string>
+    <string name="location_add_new">ਨਵਾਂ ਪਤਾ ਜੋੜੋ</string>
+
+    <string name="language_title">ਭਾਸ਼ਾ ਚੁਣੋ</string>
+    <string name="language_system">ਡਿਵਾਈਸ ਦੀ ਭਾਸ਼ਾ</string>
+
+    <string name="cart_title">ਮੇਰਾ ਬੈਗ</string>
+    <string name="checkout_title">ਚੈੱਕਆਉਟ</string>
+    <string name="cart_item_count">%1$d ਚੀਜ਼ਾਂ</string>
+    <string name="cart_one_item">1 ਚੀਜ਼</string>
+    <string name="cart_empty_title">ਤੁਹਾਡਾ ਕਾਰਟ ਖਾਲੀ ਹੈ</string>
+    <string name="cart_empty_subtitle">ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਚੀਜ਼ਾਂ ਜੋੜੋ</string>
+    <string name="cart_coupon_hint">ਕੋਈ ਕੂਪਨ ਹੈ?</string>
+    <string name="cart_coupon_applied">ਕੂਪਨ ਲੱਗ ਗਿਆ</string>
+    <string name="cart_apply">ਲਾਗੂ ਕਰੋ</string>
+    <string name="cart_bill_details">ਬਿੱਲ ਵੇਰਵਾ</string>
+    <string name="cart_subtotal">ਉਪ-ਜੋੜ</string>
+    <string name="cart_delivery_fee">ਡਿਲੀਵਰੀ ਖਰਚਾ</string>
+    <string name="cart_free">ਮੁਫ਼ਤ</string>
+    <string name="cart_coupon_discount">ਕੂਪਨ ਛੋਟ</string>
+    <string name="cart_you_save">ਤੁਹਾਡੀ ਬੱਚਤ</string>
+    <string name="cart_total">ਕੁੱਲ</string>
+    <string name="cart_checkout">ਚੈੱਕਆਊਟ ਕਰੋ</string>
+    <string name="cart_add">ਕਾਰਟ ਵਿੱਚ ਪਾਓ</string>
+
+    <string name="auth_welcome_back">ਮੁੜ ਸੁਆਗਤ ਹੈ</string>
+    <string name="auth_welcome_back_sub">ਖਰੀਦਦਾਰੀ ਜਾਰੀ ਰੱਖਣ ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ</string>
+    <string name="auth_email">ਈਮੇਲ</string>
+    <string name="auth_email_hint">you@example.com</string>
+    <string name="auth_password">ਪਾਸਵਰਡ</string>
+    <string name="auth_password_hint">ਤੁਹਾਡਾ ਪਾਸਵਰਡ</string>
+    <string name="auth_forgot">ਪਾਸਵਰਡ ਭੁੱਲ ਗਏ?</string>
+    <string name="auth_sign_in">ਸਾਈਨ ਇਨ</string>
+    <string name="auth_new_here">Duggu Store ਉੱਤੇ ਨਵੇਂ ਹੋ?</string>
+    <string name="auth_create_account">ਖਾਤਾ ਬਣਾਓ</string>
+    <string name="auth_skip">ਛੱਡੋ ਅਤੇ ਮਹਿਮਾਨ ਵਜੋਂ ਦੇਖੋ</string>
+    <string name="auth_create_title">ਖਾਤਾ ਬਣਾਓ</string>
+    <string name="auth_create_sub">ਮਿੰਟਾਂ ਵਿੱਚ ਕਰਿਆਨਾ ਤੁਹਾਡੇ ਦਰਵਾਜ਼ੇ ਉੱਤੇ</string>
+    <string name="auth_full_name">ਪੂਰਾ ਨਾਂ</string>
+    <string name="auth_full_name_hint">ਤੁਹਾਡਾ ਨਾਂ</string>
+    <string name="auth_phone">ਮੋਬਾਈਲ ਨੰਬਰ</string>
+    <string name="auth_phone_hint">10 ਅੰਕਾਂ ਦਾ ਨੰਬਰ</string>
+    <string name="auth_password_min_hint">ਘੱਟੋ-ਘੱਟ 6 ਅੱਖਰ</string>
+    <string name="auth_confirm_password">ਪਾਸਵਰਡ ਦੁਬਾਰਾ</string>
+    <string name="auth_confirm_password_hint">ਉਹੀ ਪਾਸਵਰਡ ਦੁਬਾਰਾ ਲਿਖੋ</string>
+    <string name="auth_i_want_to">ਮੈਂ ਕਰਨਾ ਚਾਹੁੰਦਾ/ਚਾਹੁੰਦੀ ਹਾਂ</string>
+    <string name="auth_role_shop">ਖਰੀਦਦਾਰੀ</string>
+    <string name="auth_role_sell">ਵਿਕਰੀ</string>
+    <string name="auth_role_deliver">ਡਿਲੀਵਰੀ</string>
+    <string name="auth_have_account">ਪਹਿਲਾਂ ਤੋਂ ਖਾਤਾ ਹੈ?</string>
+    <string name="auth_err_name">ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਨਾਂ ਲਿਖੋ</string>
+    <string name="auth_err_email">ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਈਮੇਲ ਲਿਖੋ</string>
+    <string name="auth_err_phone">ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਮੋਬਾਈਲ ਨੰਬਰ ਲਿਖੋ</string>
+    <string name="auth_err_password_short">ਪਾਸਵਰਡ ਘੱਟੋ-ਘੱਟ 6 ਅੱਖਰਾਂ ਦਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ</string>
+    <string name="auth_err_password_match">ਦੋਵੇਂ ਪਾਸਵਰਡ ਮੇਲ ਨਹੀਂ ਖਾਂਦੇ</string>
+    <string name="auth_err_email_invalid">ਇਹ ਈਮੇਲ ਪਤਾ ਸਹੀ ਨਹੀਂ ਲੱਗ ਰਿਹਾ</string>
+    <string name="auth_err_phone_invalid">10 ਅੰਕਾਂ ਦਾ ਮੋਬਾਈਲ ਨੰਬਰ ਦਿਓ</string>
+    <string name="auth_step_of">ਕਦਮ %1$d / %2$d</string>
+    <string name="auth_next">ਅੱਗੇ</string>
+    <string name="auth_back">ਪਿੱਛੇ</string>
+    <string name="auth_welcome_title">Duggu ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ</string>
+
+    <!-- Register: step headings -->
+    <string name="auth_step_name_title">ਤੁਹਾਡਾ ਨਾਂ ਕੀ ਹੈ?</string>
+    <string name="auth_step_name_body">ਇਹੀ ਨਾਂ ਵਿਕਰੇਤਾ ਅਤੇ ਡਿਲੀਵਰੀ ਪਾਰਟਨਰ ਤੁਹਾਡੇ ਆਰਡਰ ਉੱਤੇ ਦੇਖਣਗੇ।</string>
+    <string name="auth_step_name_illustration">ਥੋੜ੍ਹੀ ਜਿਹੀ ਆਪਣੀ ਪਛਾਣ ਹਰ ਆਰਡਰ ਨੂੰ ਖਾਸ ਬਣਾ ਦਿੰਦੀ ਹੈ।</string>
+    <string name="auth_step_email_title">ਤੁਹਾਡੀ ਈਮੇਲ ਕੀ ਹੈ?</string>
+    <string name="auth_step_email_body">ਤੁਸੀਂ ਇਸੇ ਨਾਲ ਸਾਈਨ ਇਨ ਕਰੋਗੇ, ਅਤੇ ਅਸੀਂ ਆਰਡਰ ਅਪਡੇਟ ਇੱਥੇ ਹੀ ਭੇਜਾਂਗੇ।</string>
+    <string name="auth_step_email_illustration">ਅਸੀਂ ਕਦੇ ਸਪੈਮ ਨਹੀਂ ਭੇਜਾਂਗੇ — ਸਿਰਫ਼ ਆਰਡਰ ਅਪਡੇਟ ਅਤੇ ਰਸੀਦਾਂ।</string>
+    <string name="auth_step_phone_title">ਤੁਹਾਡਾ ਮੋਬਾਈਲ ਨੰਬਰ</string>
+    <string name="auth_step_phone_body">ਜੇ ਡਿਲੀਵਰੀ ਪਾਰਟਨਰ ਜਾਂ ਦੁਕਾਨ ਤੁਹਾਨੂੰ ਲੱਭ ਨਾ ਸਕੇ, ਤਾਂ ਇਸੇ ਨੰਬਰ ਉੱਤੇ ਕਾਲ ਕਰਨਗੇ।</string>
+    <string name="auth_step_phone_illustration">ਸਿਰਫ਼ ਉਦੋਂ ਵਰਤਿਆ ਜਾਵੇਗਾ ਜਦੋਂ ਡਿਲੀਵਰੀ ਪਾਰਟਨਰ ਜਾਂ ਦੁਕਾਨ ਨੂੰ ਤੁਹਾਡੇ ਨਾਲ ਕਿਸੇ ਆਰਡਰ ਬਾਰੇ ਗੱਲ ਕਰਨੀ ਹੋਵੇ।</string>
+    <string name="auth_phone_progress">%1$d / 10 ਅੰਕ</string>
+    <string name="auth_step_role_title">ਤੁਸੀਂ Duggu Store ਦੀ ਵਰਤੋਂ ਕਿਵੇਂ ਕਰੋਗੇ?</string>
+    <string name="auth_step_role_body">ਜੋ ਤੁਹਾਡੇ ਉੱਤੇ ਢੁਕਦਾ ਹੈ ਉਹ ਚੁਣੋ — ਵਿਕਰੇਤਾ ਅਤੇ ਡਿਲੀਵਰੀ ਪਾਰਟਨਰ ਨੂੰ ਇਸ ਤੋਂ ਬਾਅਦ ਇੱਕ ਛੋਟੀ ਤਸਦੀਕ ਪ੍ਰਕਿਰਿਆ ਵਿੱਚੋਂ ਲੰਘਣਾ ਪਵੇਗਾ।</string>
+    <string name="auth_role_shop_blurb">ਡਿਲੀਵਰੀ ਲਈ ਕਰਿਆਨਾ ਅਤੇ ਜ਼ਰੂਰੀ ਸਮਾਨ ਆਰਡਰ ਕਰੋ।</string>
+    <string name="auth_role_sell_blurb">ਆਪਣੀ ਦੁਕਾਨ ਦੇ ਉਤਪਾਦ ਸੂਚੀਬੱਧ ਕਰੋ ਅਤੇ ਆਰਡਰ ਲਓ।</string>
+    <string name="auth_role_deliver_blurb">ਨੇੜਲੇ ਆਰਡਰ ਚੁੱਕੋ ਅਤੇ ਹਰ ਡਿਲੀਵਰੀ ਉੱਤੇ ਕਮਾਓ।</string>
+    <string name="auth_step_password_title">ਪਾਸਵਰਡ ਬਣਾਓ</string>
+    <string name="auth_step_password_body">ਹਰ ਵਾਰ ਸਾਈਨ ਇਨ ਕਰਦੇ ਸਮੇਂ ਤੁਸੀਂ ਇਸਨੂੰ ਆਪਣੀ ਈਮੇਲ ਨਾਲ ਵਰਤੋਗੇ।</string>
+    <string name="auth_step_password_illustration">ਕੁਝ ਅਜਿਹਾ ਚੁਣੋ ਜਿਸਦਾ ਅੰਦਾਜ਼ਾ ਸਿਰਫ਼ ਤੁਸੀਂ ਹੀ ਲਗਾ ਸਕੋ।</string>
+    <string name="auth_requirement_password_length">ਘੱਟੋ-ਘੱਟ 6 ਅੱਖਰ</string>
+    <string name="auth_requirement_password_match">ਦੋਵੇਂ ਪਾਸਵਰਡ ਮੇਲ ਖਾਂਦੇ ਹਨ</string>
+    <string name="auth_step_referral_title">ਕੋਈ ਰੈਫ਼ਰਲ ਕੋਡ ਹੈ?</string>
+    <string name="auth_step_referral_body">ਵਿਕਲਪਿਕ। ਜੇ ਕਿਸੇ ਦੋਸਤ ਨੇ ਆਪਣਾ ਕੋਡ ਸਾਂਝਾ ਕੀਤਾ ਹੈ, ਤਾਂ ਤੁਹਾਨੂੰ ਦੋਵਾਂ ਨੂੰ ਵਾਲਿਟ ਕ੍ਰੈਡਿਟ ਮਿਲੇਗਾ।</string>
+    <string name="auth_referral_code_label">ਰੈਫ਼ਰਲ ਕੋਡ</string>
+    <string name="auth_referral_code_hint">ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਕੋਡ ਨਹੀਂ ਹੈ ਤਾਂ ਖਾਲੀ ਛੱਡ ਦਿਓ</string>
+    <string name="auth_summary_title">ਤੁਹਾਡਾ ਵੇਰਵਾ</string>
+    <string name="auth_summary_name">ਨਾਂ</string>
+    <string name="auth_summary_email">ਈਮੇਲ</string>
+    <string name="auth_summary_phone">ਮੋਬਾਈਲ</string>
+    <string name="auth_summary_role">ਇਸ ਰੂਪ ਵਿੱਚ ਜੁੜ ਰਹੇ ਹੋ</string>
+    <string name="auth_summary_edit_hint">ਕੁਝ ਗਲਤ ਹੈ? ਠੀਕ ਕਰਨ ਲਈ ਪਿੱਛੇ ਜਾਓ।</string>
+
+    <!-- Register: terms acknowledgement -->
+    <string name="auth_terms_prefix">ਮੈਂ ਸਹਿਮਤ ਹਾਂ</string>
+    <string name="auth_terms_link">ਨਿਯਮ ਅਤੇ ਗੋਪਨੀਯਤਾ ਨੀਤੀ ਨਾਲ</string>
+    <string name="auth_err_terms">ਜਾਰੀ ਰੱਖਣ ਲਈ ਨਿਯਮ ਅਤੇ ਗੋਪਨੀਯਤਾ ਨੀਤੀ ਸਵੀਕਾਰ ਕਰੋ</string>
+    <string name="auth_terms_dialog_body">Duggu Store ਵਰਤ ਕੇ ਤੁਸੀਂ ਜ਼ਿੰਮੇਵਾਰੀ ਨਾਲ ਆਰਡਰ ਕਰਨ ਅਤੇ ਸਹੀ ਡਿਲੀਵਰੀ ਵੇਰਵੇ ਦੇਣ ਲਈ ਸਹਿਮਤ ਹੁੰਦੇ ਹੋ। ਵਿਕਰੇਤਾ ਅਤੇ ਡਿਲੀਵਰੀ ਪਾਰਟਨਰ, ਪਲੇਟਫਾਰਮ ਉੱਤੇ ਕੰਮ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤਸਦੀਕ ਕੀਤੇ ਜਾਂਦੇ ਹਨ।\n\nਅਸੀਂ ਤੁਹਾਡਾ ਨਾਂ, ਮੋਬਾਈਲ ਨੰਬਰ, ਪਤੇ ਅਤੇ ਆਰਡਰ ਇਤਿਹਾਸ ਤੁਹਾਡੇ ਆਰਡਰ ਪੂਰੇ ਕਰਨ ਲਈ ਰੱਖਦੇ ਹਾਂ, ਅਤੇ ਤੁਹਾਡਾ ਟਿਕਾਣਾ ਸਿਰਫ਼ ਆਰਡਰ ਦਿੰਦੇ ਸਮੇਂ, ਜਾਂ ਵਿਕਰੇਤਾਵਾਂ/ਡਿਲੀਵਰੀ ਪਾਰਟਨਰ ਲਈ ਪਿੱਕਅੱਪ ਅਤੇ ਡਿਲੀਵਰੀ ਰੂਟ ਕਰਨ ਲਈ ਵਰਤਦੇ ਹਾਂ। ਇਹ ਡਾਟਾ ਕਦੇ ਕਿਸੇ ਤੀਜੀ ਧਿਰ ਨੂੰ ਨਹੀਂ ਵੇਚਿਆ ਜਾਂਦਾ।</string>
+    <string name="dialog_close">ਬੰਦ ਕਰੋ</string>
+
+    <!-- Forgot password -->
+    <string name="auth_forgot_title">ਆਪਣਾ Duggu ਪਾਸਵਰਡ ਰੀਸੈੱਟ ਕਰੋ</string>
+    <string name="auth_forgot_sent_title">ਆਪਣੀ ਈਮੇਲ ਦੇਖੋ</string>
+    <string name="auth_forgot_sent_subtitle">ਲਿੰਕ ਤੁਹਾਡੇ ਰਸਤੇ ਵਿੱਚ ਹੈ</string>
+    <string name="auth_forgot_sent_body">ਜੇ ਉਸ ਈਮੇਲ ਨਾਲ ਕੋਈ ਖਾਤਾ ਮੌਜੂਦ ਹੈ, ਤਾਂ ਅਸੀਂ ਨਵਾਂ ਪਾਸਵਰਡ ਸੈੱਟ ਕਰਨ ਲਈ ਇੱਕ ਲਿੰਕ ਭੇਜ ਦਿੱਤਾ ਹੈ। ਇਸੇ ਫ਼ੋਨ ਉੱਤੇ ਲਿੰਕ ਖੋਲ੍ਹੋ ਅਤੇ ਐਪ ਤੁਹਾਨੂੰ ਅਗਲੇ ਕਦਮ ਉੱਤੇ ਲੈ ਜਾਵੇਗੀ।</string>
+    <string name="auth_send_reset_link">ਰੀਸੈੱਟ ਲਿੰਕ ਭੇਜੋ</string>
+    <string name="auth_back_to_sign_in">ਸਾਈਨ ਇਨ ਉੱਤੇ ਵਾਪਸ ਜਾਓ</string>
+
+    <!-- Reset password -->
+    <string name="auth_reset_title">ਨਵਾਂ ਪਾਸਵਰਡ</string>
+    <string name="auth_reset_subtitle">ਇਸ ਤੋਂ ਤੁਰੰਤ ਬਾਅਦ ਤੁਸੀਂ ਸਾਈਨ ਇਨ ਹੋ ਜਾਓਗੇ</string>
+    <string name="auth_new_password">ਨਵਾਂ ਪਾਸਵਰਡ</string>
+    <string name="auth_confirm_new_password">ਨਵਾਂ ਪਾਸਵਰਡ ਦੁਬਾਰਾ</string>
+    <string name="auth_save_password">ਪਾਸਵਰਡ ਸੇਵ ਕਰੋ</string>
+    <string name="auth_cancel">ਰੱਦ ਕਰੋ</string>
+
+    <!-- Verify email -->
+    <string name="auth_verify_title">ਆਪਣੀ ਈਮੇਲ ਤਸਦੀਕ ਕਰੋ</string>
+    <string name="auth_verify_subtitle">ਸਾਡੇ ਵੱਲੋਂ ਭੇਜਿਆ 6 ਅੰਕਾਂ ਦਾ ਕੋਡ ਦਿਓ</string>
+    <string name="auth_sent_to">ਭੇਜਿਆ ਗਿਆ</string>
+    <string name="auth_verify_button">ਤਸਦੀਕ ਕਰੋ</string>
+    <string name="auth_resend_success">ਨਵਾਂ ਕੋਡ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਆਪਣਾ ਇਨਬਾਕਸ ਦੇਖੋ।</string>
+    <string name="auth_resend_code">ਕੋਡ ਦੁਬਾਰਾ ਭੇਜੋ</string>
+    <string name="auth_resend_cooldown">%1$d ਸਕਿੰਟਾਂ ਵਿੱਚ ਦੁਬਾਰਾ ਭੇਜੋ</string>
+
+    <!-- Welcome / onboarding slides -->
+    <string name="welcome_slide1_title">ਮਿੰਟਾਂ ਵਿੱਚ ਕਰਿਆਨਾ</string>
+    <string name="welcome_slide1_body">ਤੁਹਾਡੇ ਨੇੜੇ ਦੀਆਂ ਦੁਕਾਨਾਂ ਤੋਂ ਫਲ, ਦੁੱਧ, ਸਨੈਕਸ ਅਤੇ ਰੋਜ਼ਾਨਾ ਦਾ ਸਮਾਨ — ਕੁਝ ਟੈਪਾਂ ਵਿੱਚ ਆਰਡਰ ਕਰੋ, ਮਿੰਟਾਂ ਵਿੱਚ ਦਰਵਾਜ਼ੇ ਉੱਤੇ ਪਾਓ।</string>
+    <string name="welcome_slide2_title">ਹਰ ਆਰਡਰ ਨੂੰ ਲਾਈਵ ਫਾਲੋ ਕਰੋ</string>
+    <string name="welcome_slide2_body">ਦੇਖੋ ਕਦੋਂ ਦੁਕਾਨ ਪੈਕਿੰਗ ਸ਼ੁਰੂ ਕਰਦੀ ਹੈ, ਕਦੋਂ ਡਿਲੀਵਰੀ ਪਾਰਟਨਰ ਇਸਨੂੰ ਚੁੱਕਦਾ ਹੈ, ਅਤੇ ਉਹ ਨਕਸ਼ੇ ਉੱਤੇ ਕਿੱਥੇ ਹੈ, ਜਦੋਂ ਤੱਕ ਆਰਡਰ ਪਹੁੰਚ ਨਹੀਂ ਜਾਂਦਾ।</string>
+    <string name="welcome_slide3_title">ਜਾਂ ਸਾਡੇ ਨਾਲ ਕਮਾਓ</string>
+    <string name="welcome_slide3_body">ਆਪਣੀ ਦੁਕਾਨ ਦੇ ਉਤਪਾਦ ਸੂਚੀਬੱਧ ਕਰਨ ਲਈ ਵਿਕਰੇਤਾ ਬਣੋ, ਜਾਂ ਆਪਣੇ ਇਲਾਕੇ ਵਿੱਚ ਆਰਡਰ ਲੈਣ ਲਈ ਡਿਲੀਵਰੀ ਪਾਰਟਨਰ ਬਣੋ। ਅਸੀਂ ਤੁਹਾਨੂੰ ਪੂਰੀ ਪ੍ਰਕਿਰਿਆ ਸਮਝਾਵਾਂਗੇ।</string>
+    <string name="welcome_skip">ਛੱਡੋ</string>
+    <string name="welcome_next">ਅੱਗੇ</string>
+    <string name="welcome_get_started">ਸ਼ੁਰੂ ਕਰੋ</string>
+    <string name="welcome_have_account">ਪਹਿਲਾਂ ਤੋਂ ਖਾਤਾ ਹੈ?</string>
+    <string name="welcome_log_in">ਸਾਈਨ ਇਨ</string>
+
+    <string name="account_my_orders">ਮੇਰੇ ਆਰਡਰ</string>
+    <string name="account_my_orders_sub">ਪੁਰਾਣੇ ਆਰਡਰ ਵੇਖੋ ਅਤੇ ਟਰੈਕ ਕਰੋ</string>
+    <string name="account_favourites_sub">ਤੁਹਾਡੇ ਸਾਂਭੇ ਹੋਏ ਉਤਪਾਦ</string>
+    <string name="account_addresses">ਪਤੇ</string>
+    <string name="account_addresses_sub">ਤੁਹਾਡੇ ਆਰਡਰ ਕਿੱਥੇ ਪਹੁੰਚਣਗੇ</string>
+    <string name="account_sign_out">ਸਾਈਨ ਆਊਟ</string>
+    <string name="account_sign_out_sub">ਇਸ ਡਿਵਾਈਸ ਤੋਂ ਲੌਗ ਆਊਟ ਕਰੋ</string>
+    <string name="account_user">ਵਰਤੋਂਕਾਰ</string>
+
+    <string name="seller_order_announcement">ਨਵਾਂ ਆਰਡਰ ਆਇਆ ਹੈ। %1$d ਰੁਪਏ।</string>
+    <string name="seller_alerts_on">ਨਵੇਂ ਆਰਡਰ ਬੋਲ ਕੇ ਦੱਸੇ ਜਾਣਗੇ</string>
+    <string name="seller_alerts_off">ਨਵੇਂ ਆਰਡਰ ਬਿਨਾਂ ਆਵਾਜ਼ ਦੇ ਆਉਣਗੇ</string>
+    <string name="seller_alerts_on_action">ਬੰਦ ਕਰੋ</string>
+    <string name="seller_alerts_off_action">ਚਾਲੂ ਕਰੋ</string>
+
+    <string name="notifications_title">ਸੂਚਨਾਵਾਂ</string>
+    <string name="notifications_empty_title">ਕੁਝ ਨਵਾਂ ਨਹੀਂ</string>
+    <string name="notifications_empty_sub">ਤੁਹਾਡੇ ਆਰਡਰ ਦੀ ਜਾਣਕਾਰੀ ਇੱਥੇ ਦਿਖੇਗੀ</string>
+    <string name="notifications_mark_all_read">ਸਭ ਨੂੰ ਪੜ੍ਹਿਆ ਹੋਇਆ ਚਿੰਨ੍ਹਿਤ ਕਰੋ</string>
+
+    <string name="common_back">ਵਾਪਸ</string>
+    <string name="common_cancel">ਰੱਦ ਕਰੋ</string>
+    <string name="common_save">ਸੰਭਾਲੋ</string>
+
+    <!-- Checkout -->
+    <string name="checkout_delivery_address">ਡਿਲੀਵਰੀ ਪਤਾ</string>
+    <string name="checkout_add_address">ਡਿਲੀਵਰੀ ਪਤਾ ਜੋੜੋ</string>
+    <string name="checkout_address_required">ਆਰਡਰ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਜ਼ਰੂਰੀ ਹੈ</string>
+    <string name="checkout_manage_addresses">ਪਤੇ ਸੰਭਾਲੋ</string>
+    <string name="checkout_payment">ਭੁਗਤਾਨ</string>
+    <string name="checkout_cod">ਡਿਲੀਵਰੀ ਤੇ ਨਕਦ</string>
+    <string name="checkout_cod_sub">ਆਰਡਰ ਆਉਣ ਤੇ ਭੁਗਤਾਨ ਕਰੋ</string>
+    <string name="checkout_use_wallet">ਵਾਲਿਟ ਬਕਾਇਆ ਵਰਤੋ</string>
+    <string name="checkout_wallet_available">₹%1$s ਉਪਲਬਧ</string>
+    <string name="checkout_order_summary">ਆਰਡਰ ਸਾਰ</string>
+    <string name="checkout_line_item">%1$d × %2$s</string>
+    <string name="checkout_wallet_used">ਵਾਲਿਟ ਤੋਂ ਲਿਆ</string>
+    <string name="checkout_select_address">ਅੱਗੇ ਵਧਣ ਲਈ ਡਿਲੀਵਰੀ ਪਤਾ ਚੁਣੋ</string>
+    <string name="checkout_minimum_order">ਆਰਡਰ ਕਰਨ ਲਈ ₹%1$s ਹੋਰ ਜੋੜੋ (ਘੱਟੋ-ਘੱਟ ₹%2$s)</string>
+    <string name="checkout_place_order">ਆਰਡਰ ਕਰੋ · ₹%1$s</string>
+
+    <!-- Order tracking -->
+    <string name="orders_title">ਮੇਰੇ ਆਰਡਰ</string>
+    <string name="orders_count">%1$d ਆਰਡਰ</string>
+    <string name="orders_one">1 ਆਰਡਰ</string>
+    <string name="orders_search_hint">ਸਮਾਨ ਦੇ ਨਾਂ ਨਾਲ ਆਰਡਰ ਲੱਭੋ</string>
+    <string name="orders_filter_all">ਸਾਰੇ</string>
+    <string name="orders_filter_active">ਚਾਲੂ</string>
+    <string name="orders_filter_delivered">ਡਿਲੀਵਰ ਹੋਏ</string>
+    <string name="orders_filter_cancelled">ਰੱਦ</string>
+    <string name="orders_empty_title">ਹਾਲੇ ਕੋਈ ਆਰਡਰ ਨਹੀਂ</string>
+    <string name="orders_empty_subtitle">ਆਰਡਰ ਕਰਦੇ ਹੀ ਉਹ ਇੱਥੇ ਦਿਖਣਗੇ</string>
+    <string name="orders_no_match_title">ਕੋਈ ਆਰਡਰ ਨਹੀਂ ਮਿਲਿਆ</string>
+    <string name="orders_no_match_subtitle">ਕੋਈ ਹੋਰ ਖੋਜ ਜਾਂ ਫਿਲਟਰ ਅਜ਼ਮਾਓ</string>
+    <string name="orders_reorder_prompt">ਮੁੱਕ ਰਿਹਾ ਹੈ? #%1$s ਤੋਂ ਮੁੜ ਆਰਡਰ ਕਰੋ</string>
+    <string name="orders_loading_items">ਸਮਾਨ ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…</string>
+    <string name="orders_one_item">1 ਚੀਜ਼</string>
+    <string name="orders_item_plus_more">%1$s +%2$d ਹੋਰ</string>
+    <string name="orders_number">ਆਰਡਰ #%1$s</string>
+    <string name="orders_status">ਸਥਿਤੀ</string>
+    <string name="orders_delivering_to">ਇੱਥੇ ਡਿਲੀਵਰੀ</string>
+    <string name="orders_items_in_order">ਇਸ ਆਰਡਰ ਦਾ ਸਮਾਨ</string>
+    <string name="orders_item_fallback">ਚੀਜ਼</string>
+    <string name="orders_quantity">×%1$d</string>
+    <string name="orders_your_rating">ਤੁਹਾਡੀ ਰੇਟਿੰਗ</string>
+    <string name="orders_rate_item">ਇਸਨੂੰ ਰੇਟ ਕਰੋ</string>
+    <string name="orders_rate_star">%1$d ਸਟਾਰ ਦਿਓ</string>
+    <string name="orders_rate_stars">%1$d ਸਟਾਰ ਦਿਓ</string>
+    <string name="orders_reorder">ਇਹੀ ਸਮਾਨ ਮੁੜ ਆਰਡਰ ਕਰੋ</string>
+    <string name="orders_reminder_set">ਅਸੀਂ ਤੁਹਾਨੂੰ ਲਗਭਗ ਇੱਕ ਹਫ਼ਤੇ ਵਿੱਚ ਯਾਦ ਕਰਾਵਾਂਗੇ</string>
+    <string name="orders_remind_me">ਇੱਕ ਹਫ਼ਤੇ ਬਾਅਦ ਯਾਦ ਕਰਾਓ</string>
+    <string name="orders_report_problem">ਸਮੱਸਿਆ ਦੱਸੋ</string>
+    <string name="orders_issue_reviewing">ਸ਼ਿਕਾਇਤ ਦਰਜ — ਵਿਕਰੇਤਾ ਦੇਖ ਰਿਹਾ ਹੈ</string>
+    <string name="orders_issue_resolved">ਹੱਲ ਹੋਇਆ — ₹%1$s ਤੁਹਾਡੇ ਵਾਲਿਟ ਵਿੱਚ ਜਮ੍ਹਾਂ</string>
+    <string name="orders_issue_rejected">ਤੁਹਾਡੀ ਸ਼ਿਕਾਇਤ ਦੇਖੀ ਗਈ ਅਤੇ ਰੱਦ ਕਰ ਦਿੱਤੀ ਗਈ</string>
+    <string name="orders_progress">ਤਰੱਕੀ</string>
+    <string name="orders_step_placed">ਆਰਡਰ ਕੀਤਾ ਗਿਆ</string>
+    <string name="orders_step_confirmed">ਆਰਡਰ ਪੱਕਾ ਹੋਇਆ</string>
+    <string name="orders_step_preparing">ਤਿਆਰ ਹੋ ਰਿਹਾ ਹੈ</string>
+    <string name="orders_step_ready">ਪਿਕਅੱਪ ਲਈ ਤਿਆਰ</string>
+    <string name="orders_step_out">ਡਿਲੀਵਰੀ ਤੇ ਨਿਕਲਿਆ</string>
+    <string name="orders_step_delivered">ਡਿਲੀਵਰ ਹੋ ਗਿਆ</string>
+    <string name="orders_cancel">ਆਰਡਰ ਰੱਦ ਕਰੋ</string>
+    <string name="orders_cancelled_title">ਆਰਡਰ ਰੱਦ</string>
+    <string name="orders_cancelled_subtitle">ਇਹ ਆਰਡਰ ਡਿਲੀਵਰ ਨਹੀਂ ਹੋਵੇਗਾ</string>
+    <string name="orders_issue_details_hint">ਹੋਰ ਦੱਸੋ (ਜ਼ਰੂਰੀ ਨਹੀਂ)</string>
+    <string name="orders_submit">ਭੇਜੋ</string>
+    <string name="orders_issue_missing">ਸਮਾਨ ਨਹੀਂ ਆਇਆ</string>
+    <string name="orders_issue_damaged">ਸਮਾਨ ਟੁੱਟਿਆ ਹੋਇਆ</string>
+    <string name="orders_issue_wrong">ਗਲਤ ਸਮਾਨ</string>
+    <string name="orders_issue_quality">ਗੁਣਵੱਤਾ ਦੀ ਸਮੱਸਿਆ</string>
+    <string name="orders_issue_other">ਹੋਰ</string>
+
+    <!-- Account (previously untranslated) -->
+    <string name="account_wallet">ਮੇਰਾ ਵਾਲਿਟ</string>
+    <string name="account_wallet_sub">ਕੈਸ਼ਬੈਕ ਅਤੇ ਰਿਫ਼ੰਡ ਬਕਾਇਆ</string>
+    <string name="account_notifications">ਸੂਚਨਾਵਾਂ</string>
+    <string name="account_notifications_sub">ਆਰਡਰ ਅੱਪਡੇਟ ਅਤੇ ਪੇਸ਼ਕਸ਼ਾਂ</string>
+    <string name="account_refer">ਰੈਫ਼ਰ ਕਰੋ ਤੇ ਕਮਾਓ</string>
+    <string name="account_refer_sub">ਆਪਣਾ ਕੋਡ ਸਾਂਝਾ ਕਰੋ, ਵਾਲਿਟ ਕ੍ਰੈਡਿਟ ਪਾਓ</string>
+    <string name="account_settings">ਸੈਟਿੰਗਾਂ</string>
+    <string name="account_settings_sub">ਪ੍ਰੋਫ਼ਾਈਲ, ਪਾਸਵਰਡ ਅਤੇ ਹੋਰ</string>
+
+    <!-- Admin navigation -->
+    <string name="nav_approvals">ਮਨਜ਼ੂਰੀਆਂ</string>
+    <string name="nav_database">ਡਾਟਾਬੇਸ</string>
+
+    <!-- Product detail -->
+    <string name="pd_load_error">ਇਹ ਪ੍ਰੋਡਕਟ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ</string>
+    <string name="pd_go_back">ਵਾਪਸ ਜਾਓ</string>
+    <string name="pd_add_favourite">ਪਸੰਦੀਦਾ ਵਿੱਚ ਜੋੜੋ</string>
+    <string name="pd_remove_favourite">ਪਸੰਦੀਦਾ ਵਿੱਚੋਂ ਹਟਾਓ</string>
+    <string name="pd_per_unit">ਪ੍ਰਤੀ %1$s</string>
+    <string name="pd_in_stock">ਸਟਾਕ ਵਿੱਚ · %1$d ਬਾਕੀ</string>
+    <string name="pd_out_of_stock">ਸਟਾਕ ਖਤਮ</string>
+    <string name="pd_fast_delivery">ਤੇਜ਼ ਡਿਲੀਵਰੀ</string>
+    <string name="pd_quality_checked">ਗੁਣਵੱਤਾ ਜਾਂਚੀ ਗਈ</string>
+    <string name="pd_description">ਵੇਰਵਾ</string>
+    <string name="pd_ratings_reviews">ਰੇਟਿੰਗ ਅਤੇ ਸਮੀਖਿਆਵਾਂ</string>
+    <string name="pd_one_review">(1 ਸਮੀਖਿਆ)</string>
+    <string name="pd_review_count">(%1$d ਸਮੀਖਿਆਵਾਂ)</string>
+    <string name="pd_verified_buyer">ਤਸਦੀਕਸ਼ੁਦਾ ਖਰੀਦਦਾਰ</string>
+
+    <string name="pd_share">ਸ਼ੇਅਰ ਕਰੋ</string>
+    <string name="pd_share_title">ਇਹ ਪ੍ਰੋਡਕਟ ਸ਼ੇਅਰ ਕਰੋ</string>
+    <string name="pd_inclusive_taxes">ਸਾਰੇ ਟੈਕਸ ਸਮੇਤ</string>
+    <string name="pd_one_rating">(1 ਰੇਟਿੰਗ)</string>
+    <string name="pd_rating_count">(%1$d ਰੇਟਿੰਗਾਂ)</string>
+    <string name="pd_best_offers">ਵਧੀਆ ਆਫਰ</string>
+    <string name="pd_swipe_more">ਹੋਰ ਵੇਖਣ ਲਈ ਸਵਾਈਪ ਕਰੋ</string>
+    <string name="pd_offer_percent">ਇਸ ਆਰਡਰ ਤੇ %1$d%% ਛੋਟ</string>
+    <string name="pd_offer_min_order">₹%1$d ਤੋਂ ਵੱਧ ਦੇ ਆਰਡਰ ਤੇ</string>
+    <string name="pd_offer_max_discount">₹%1$d ਤੱਕ ਦੀ ਛੋਟ</string>
+    <string name="pd_tap_to_copy">ਕਾਪੀ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="pd_code_copied">ਕੋਡ ਕਾਪੀ ਹੋ ਗਿਆ</string>
+    <string name="pd_product_details">ਪ੍ਰੋਡਕਟ ਦੀ ਜਾਣਕਾਰੀ</string>
+    <string name="pd_spec_category">ਕੈਟੇਗਰੀ</string>
+    <string name="pd_spec_pack_size">ਪੈਕ ਸਾਈਜ਼</string>
+    <string name="pd_spec_type">ਕਿਸਮ</string>
+    <string name="pd_type_veg">ਸ਼ਾਕਾਹਾਰੀ</string>
+    <string name="pd_type_non_veg">ਮਾਸਾਹਾਰੀ</string>
+    <string name="pd_spec_availability">ਉਪਲਬਧਤਾ</string>
+    <string name="pd_spec_in_stock">ਸਟਾਕ ਵਿੱਚ (%1$d ਉਪਲਬਧ)</string>
+    <string name="pd_spec_out_of_stock">ਹਾਲੇ ਸਟਾਕ ਵਿੱਚ ਨਹੀਂ</string>
+    <string name="pd_spec_discount">ਛੋਟ</string>
+    <string name="pd_spec_discount_value">%1$d%% ਛੋਟ — ਤੁਸੀਂ ₹%2$s ਬਚਾਉਂਦੇ ਹੋ</string>
+    <string name="pd_spec_listed_on">ਲਿਸਟ ਕੀਤਾ</string>
+    <string name="pd_delivery_services">ਡਿਲੀਵਰੀ ਤੇ ਸੇਵਾਵਾਂ</string>
+    <string name="pd_delivery_eta">%1$s ਵਿੱਚ ਡਿਲੀਵਰੀ</string>
+    <string name="pd_delivery_eta_sub">ਆਰਡਰ ਸਕਰੀਨ ਤੋਂ ਰਾਈਡਰ ਨੂੰ ਮੈਪ ਤੇ ਲਾਈਵ ਟ੍ਰੈਕ ਕਰੋ</string>
+    <string name="pd_cod">ਕੈਸ਼ ਆਨ ਡਿਲੀਵਰੀ ਉਪਲਬਧ</string>
+    <string name="pd_cod_sub">ਆਰਡਰ ਆਉਣ ਤੇ ਰਾਈਡਰ ਨੂੰ ਭੁਗਤਾਨ ਕਰੋ — ਐਡਵਾਂਸ ਦੀ ਲੋੜ ਨਹੀਂ</string>
+    <string name="pd_returns">7 ਦਿਨਾਂ ਵਿੱਚ ਆਸਾਨ ਹੱਲ</string>
+    <string name="pd_returns_sub">ਕੁਝ ਗੜਬੜ ਹੈ? ਡਿਲੀਵਰੀ ਤੋਂ ਬਾਅਦ ਦੱਸੋ ਤੇ ਵਾਲਿਟ ਰਿਫੰਡ ਲਵੋ</string>
+    <string name="pd_secure_payments">ਸੁਰੱਖਿਅਤ ਭੁਗਤਾਨ</string>
+    <string name="pd_secure_payments_sub">ਕਾਰਡ ਦੀ ਜਾਣਕਾਰੀ ਐਪ ਵਿੱਚ ਕਦੇ ਸੇਵ ਨਹੀਂ ਹੁੰਦੀ</string>
+    <string name="pd_highlights">ਇਹ ਕਿਉਂ ਪਸੰਦ ਆਵੇਗਾ</string>
+    <string name="pd_highlight_save">ਇਸ ਆਈਟਮ ਤੇ ਤੁਸੀਂ ₹%1$s ਬਚਾਉਂਦੇ ਹੋ</string>
+    <string name="pd_highlight_low_stock">ਸਿਰਫ਼ %1$d ਬਚੇ ਹਨ</string>
+    <string name="pd_highlight_stock">%1$d ਸਟਾਕ ਵਿੱਚ, ਭੇਜਣ ਲਈ ਤਿਆਰ</string>
+    <string name="pd_highlight_veg">ਸ਼ਾਕਾਹਾਰੀ ਪ੍ਰੋਡਕਟ</string>
+    <string name="pd_highlight_pack">%1$s ਵਿੱਚ ਮਿਲਦਾ ਹੈ</string>
+    <string name="pd_no_reviews">ਹਾਲੇ ਕੋਈ ਰੇਟਿੰਗ ਨਹੀਂ</string>
+    <string name="pd_no_reviews_sub">ਆਰਡਰ ਆਉਣ ਤੋਂ ਬਾਅਦ ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਰੇਟਿੰਗ ਦਿਓ</string>
+    <string name="pd_no_written_reviews">ਰੇਟਿੰਗਾਂ ਆ ਗਈਆਂ — ਹਾਲੇ ਕਿਸੇ ਰਿਵਿਊ ਨਹੀਂ ਲਿਖਿਆ।</string>
+    <string name="pd_verified_purchase">ਵੈਰੀਫਾਈਡ ਖਰੀਦ</string>
+    <string name="pd_similar_products">ਮਿਲਦੇ-ਜੁਲਦੇ ਪ੍ਰੋਡਕਟ</string>
+    <string name="pd_more_from_store">ਇਸ ਸਟੋਰ ਤੋਂ ਹੋਰ</string>
+    <string name="pd_total">ਕੁੱਲ</string>
+    <string name="pd_add_to_bag">ਬੈਗ ਵਿੱਚ ਪਾਓ</string>
+    <string name="pd_go_to_bag">ਬੈਗ ਤੇ ਜਾਓ</string>
+    <string name="pd_in_bag">ਤੁਹਾਡੇ ਬੈਗ ਵਿੱਚ %1$d</string>
+    <string name="pd_in_bag_short">ਬੈਗ ਵਿੱਚ %1$d</string>
+    <string name="pd_decrease">ਮਾਤਰਾ ਘਟਾਓ</string>
+    <string name="pd_increase">ਮਾਤਰਾ ਵਧਾਓ</string>
+
+    <!-- Categories -->
+    <string name="categories_title">ਸ਼੍ਰੇਣੀਆਂ</string>
+    <string name="categories_subtitle">ਸਟੋਰ ਦਾ ਸਾਰਾ ਸਮਾਨ, ਸ਼੍ਰੇਣੀ ਅਨੁਸਾਰ</string>
+    <string name="categories_empty_title">ਹਾਲੇ ਕੋਈ ਸ਼੍ਰੇਣੀ ਨਹੀਂ</string>
+    <string name="categories_empty_subtitle">ਸਟੋਰ ਵਿੱਚ ਸ਼੍ਰੇਣੀਆਂ ਜੁੜਦੇ ਹੀ ਇੱਥੇ ਦਿਖਣਗੀਆਂ</string>
+    <string name="categories_nothing_here">ਇੱਥੇ ਹਾਲੇ ਕੁਝ ਨਹੀਂ</string>
+
+    <!-- Favourites -->
+    <string name="favourites_title">ਵਿਸ਼ਲਿਸਟ</string>
+    <string name="favourites_one">1 ਪ੍ਰੋਡਕਟ</string>
+    <string name="favourites_count">%1$d ਪ੍ਰੋਡਕਟ</string>
+    <string name="favourites_empty_title">ਤੁਹਾਡੀ ਵਿਸ਼ਲਿਸਟ ਖਾਲੀ ਹੈ</string>
+    <string name="favourites_empty_subtitle">ਸੰਭਾਲਣ ਲਈ ਪ੍ਰੋਡਕਟ ਤੇ ਦਿਲ ਦਬਾਓ</string>
+
+    <!-- Addresses -->
+    <string name="addresses_choose">ਪਤਾ ਚੁਣੋ</string>
+    <string name="addresses_title">ਮੇਰੇ ਪਤੇ</string>
+    <string name="addresses_one_saved">1 ਸੰਭਾਲਿਆ</string>
+    <string name="addresses_count_saved">%1$d ਸੰਭਾਲੇ</string>
+    <string name="addresses_empty_title">ਹਾਲੇ ਕੋਈ ਪਤਾ ਨਹੀਂ</string>
+    <string name="addresses_empty_subtitle">ਆਰਡਰ ਕਰਨ ਲਈ ਡਿਲੀਵਰੀ ਪਤਾ ਜੋੜੋ</string>
+    <string name="addresses_add_new">ਨਵਾਂ ਪਤਾ ਜੋੜੋ</string>
+    <string name="addresses_default">ਡਿਫ਼ਾਲਟ ਪਤਾ</string>
+    <string name="addresses_set_default">ਡਿਫ਼ਾਲਟ ਬਣਾਓ</string>
+    <string name="addresses_default_badge">ਡਿਫ਼ਾਲਟ</string>
+    <string name="addresses_edit_label">%1$s ਬਦਲੋ</string>
+    <string name="addresses_delete_label">%1$s ਹਟਾਓ</string>
+    <string name="addresses_add_title">ਪਤਾ ਜੋੜੋ</string>
+    <string name="addresses_edit_title">ਪਤਾ ਬਦਲੋ</string>
+    <string name="addresses_field_label">ਲੇਬਲ</string>
+    <string name="addresses_label_hint">ਘਰ, ਦਫ਼ਤਰ…</string>
+    <string name="addresses_full_address">ਪੂਰਾ ਪਤਾ</string>
+    <string name="addresses_default_home">ਘਰ</string>
+
+    <!-- Wallet -->
+    <string name="wallet_title">ਮੇਰਾ ਵਾਲਿਟ</string>
+    <string name="wallet_usable">ਅਗਲੇ ਆਰਡਰ ਤੇ ਵਰਤੋ</string>
+    <string name="wallet_empty_title">ਹਾਲੇ ਕੋਈ ਵਾਲਿਟ ਗਤੀਵਿਧੀ ਨਹੀਂ</string>
+    <string name="wallet_empty_subtitle">ਰਿਫ਼ੰਡ ਅਤੇ ਰੈਫ਼ਰਲ ਬੋਨਸ ਇੱਥੇ ਦਿਖਣਗੇ</string>
+    <string name="wallet_refer_title">ਰੈਫ਼ਰ ਕਰੋ ਤੇ ₹50 ਕਮਾਓ</string>
+    <string name="wallet_your_code">ਤੁਹਾਡਾ ਕੋਡ: %1$s</string>
+    <string name="wallet_share_message">ਮੇਰਾ Duggu Store ਰੈਫ਼ਰਲ ਕੋਡ %1$s ਵਰਤੋ, ਸਾਨੂੰ ਦੋਹਾਂ ਨੂੰ ₹50 ਵਾਲਿਟ ਕ੍ਰੈਡਿਟ ਮਿਲੇਗਾ!</string>
+    <string name="wallet_share_chooser">ਰੈਫ਼ਰਲ ਕੋਡ ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="wallet_share">ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="wallet_credit">ਕ੍ਰੈਡਿਟ</string>
+
+    <!-- Cart (additional) -->
+    <string name="cart_remove_item">%1$s ਹਟਾਓ</string>
+    <string name="cart_minimum_order">ਆਰਡਰ ਕਰਨ ਲਈ ₹%1$s ਹੋਰ ਜੋੜੋ (ਘੱਟੋ-ਘੱਟ ₹%2$s)</string>
+
+    <!-- Quick shop: the category sheet opened from a home tile -->
+    <string name="quick_shop_count">%1$d ਪ੍ਰੋਡਕਟ</string>
+    <string name="quick_shop_loading">ਪ੍ਰੋਡਕਟ ਲੋਡ ਹੋ ਰਹੇ ਹਨ…</string>
+    <string name="quick_shop_empty">ਇਸ ਕੈਟੇਗਰੀ ਵਿੱਚ ਹਾਲੇ ਕੁਝ ਨਹੀਂ</string>
+    <string name="quick_shop_none_match">ਇਸ ਫ਼ਿਲਟਰ ਨਾਲ ਕੋਈ ਪ੍ਰੋਡਕਟ ਨਹੀਂ ਮਿਲਿਆ</string>
+    <string name="quick_shop_view_all">ਸਾਰੇ %1$d ਪ੍ਰੋਡਕਟ ਵੇਖੋ</string>
+    <string name="quick_filter_all">ਸਾਰੇ</string>
+    <string name="quick_filter_offers">ਆਫ਼ਰ</string>
+    <string name="quick_filter_under">₹%1$s ਤੋਂ ਘੱਟ</string>
+    <string name="quick_filter_veg">ਸਿਰਫ਼ ਵੈਜ</string>
+
+    <!-- Seller: quick sell, the category tiles above the product list -->
+    <string name="seller_quick_sell_title">ਕੁਇਕ ਸੈੱਲ</string>
+    <string name="seller_quick_sell_subtitle">ਕੈਟੇਗਰੀ ਚੁਣੋ, ਪ੍ਰੋਡਕਟ ਉਸੇ ਵਿੱਚ ਜੁੜੇਗਾ</string>
+
+    <!-- Quick checkout: the sheet that places the order from the bag -->
+    <string name="quick_checkout_title">ਕੁਇਕ ਚੈੱਕਆਊਟ</string>
+    <string name="quick_checkout_subtitle">ਪਤਾ ਅਤੇ ਕੁੱਲ ਰਕਮ, ਇੱਕ ਟੈਪ ਵਿੱਚ ਆਰਡਰ</string>
+    <string name="quick_checkout_deliver_to">ਕਿੱਥੇ ਡਿਲੀਵਰ ਕਰਨਾ ਹੈ</string>
+    <string name="quick_checkout_summary">ਆਰਡਰ ਸਾਰ</string>
+    <string name="quick_checkout_add_address">ਡਿਲੀਵਰੀ ਪਤਾ ਜੋੜੋ</string>
+    <string name="quick_checkout_no_address">ਆਰਡਰ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਪਤਾ ਸੇਵ ਕਰਨਾ ਜ਼ਰੂਰੀ ਹੈ</string>
+    <string name="quick_checkout_address_fallback">ਪਤਾ</string>
+    <string name="quick_checkout_default">ਡਿਫ਼ਾਲਟ</string>
+    <string name="quick_checkout_items">%1$d ਆਈਟਮ</string>
+    <string name="quick_checkout_to_pay">ਦੇਣਾ ਹੈ</string>
+    <string name="quick_checkout_wallet">ਵਾਲਿਟ ਬੈਲੰਸ ਵਰਤੋ</string>
+    <string name="quick_checkout_wallet_available">₹%1$d ਉਪਲਬਧ</string>
+    <string name="quick_checkout_cod">ਕੈਸ਼ ਆਨ ਡਿਲੀਵਰੀ ਨਾਲ ਭੁਗਤਾਨ</string>
+    <string name="quick_checkout_place">ਆਰਡਰ ਕਰੋ · ₹%1$s</string>
+    <string name="quick_checkout_review">ਪੂਰਾ ਚੈੱਕਆਊਟ ਖੋਲ੍ਹੋ</string>
+    <string name="cart_full_checkout">ਪਤੇ, ਕੂਪਨ ਅਤੇ ਪੂਰਾ ਬਿੱਲ</string>
+
+    <!-- Order placed confirmation -->
+    <string name="order_placed_title">ਆਰਡਰ ਹੋ ਗਿਆ!</string>
+    <string name="order_placed_body">ਤੁਹਾਡਾ ਆਰਡਰ ਸਟੋਰ ਤੱਕ ਪਹੁੰਚ ਗਿਆ ਹੈ। ਆਰਡਰ ਵਿੱਚ ਜਾ ਕੇ ਟਰੈਕ ਕਰ ਸਕਦੇ ਹੋ।</string>
+    <string name="order_placed_track">ਆਰਡਰ ਟਰੈਕ ਕਰੋ</string>
+    <string name="order_placed_continue">ਖਰੀਦਦਾਰੀ ਜਾਰੀ ਰੱਖੋ</string>
+</resources>

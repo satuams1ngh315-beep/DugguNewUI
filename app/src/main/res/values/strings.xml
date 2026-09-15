@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Duggu Store</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_favourites">Wishlist</string>
+    <string name="nav_account">Profile</string>
+    <string name="nav_products">Products</string>
+    <string name="nav_orders">Orders</string>
+    <string name="nav_available">Available</string>
+    <string name="nav_active">Active</string>
+    <string name="nav_completed">Completed</string>
+    <string name="nav_overview">Overview</string>
+    <string name="nav_users">Users</string>
+    <string name="nav_approvals">Approvals</string>
+    <string name="nav_database">Database</string>
+    <string name="nav_cart">Bag</string>
+
+    <!-- Home -->
+    <string name="home_search_hint">Search for products</string>
+    <string name="home_image_search">Search with a photo</string>
+    <string name="image_search_hint">Point at the product and tap the shutter</string>
+    <string name="image_search_reading">Looking at your photo…</string>
+    <string name="image_search_no_match">Couldn\'t tell what that is. Try again, closer and better lit.</string>
+    <string name="image_search_gallery">Choose a photo</string>
+    <string name="image_search_permission_waiting">Waiting for camera access…</string>
+    <string name="image_search_permission_needed">Camera access is needed to search with a photo. You can turn it on in Settings.</string>
+    <string name="search_recent_title">Recent searches</string>
+    <string name="search_recent_clear">Clear all</string>
+    <string name="search_recent_remove">Remove</string>
+    <string name="home_search_hint_short">Search for products</string>
+    <string name="home_voice_search">Voice search</string>
+    <string name="home_notifications">Notifications</string>
+    <string name="home_deliver_to">Deliver to</string>
+    <string name="home_greeting">Hi %1$s</string>
+    <string name="home_categories">Categories</string>
+    <string name="home_popular">Popular</string>
+    <string name="home_set_address">Set your delivery address</string>
+    <string name="home_tab_all">All</string>
+    <string name="home_results">Results</string>
+    <string name="home_products">Products</string>
+    <string name="home_popular_deals">Popular Deals</string>
+    <string name="home_empty_title">Nothing here yet</string>
+    <string name="home_empty_browse">Products will show up once a seller adds them</string>
+    <string name="home_empty_search">Try a different search</string>
+
+    <!-- Location -->
+    <string name="location_finding">Finding you…</string>
+    <string name="location_current">Current location</string>
+    <string name="location_wait">Please wait</string>
+    <string name="location_use_current">Use my current location</string>
+    <string name="location_permission_denied">Location permission denied</string>
+    <string name="location_turn_on">Turn on location to detect your address</string>
+    <string name="location_sheet_title">Delivery location</string>
+    <string name="location_sheet_subtitle">Where should we bring your order?</string>
+    <string name="location_detect">Detect my location</string>
+    <string name="location_tap_retry">Tap to try again</string>
+    <string name="location_using_gps">Using GPS</string>
+    <string name="location_detect_again">Detect again</string>
+    <string name="location_saved_addresses">Saved addresses</string>
+    <string name="location_add_new">Add a new address</string>
+
+    <!-- Language -->
+    <string name="language_title">Choose language</string>
+    <string name="language_system">Device language</string>
+
+    <!-- Cart -->
+    <string name="cart_title">My Bag</string>
+    <string name="checkout_title">Checkout</string>
+    <string name="cart_item_count">%1$d items</string>
+    <string name="cart_one_item">1 item</string>
+    <string name="cart_empty_title">Your cart is empty</string>
+    <string name="cart_empty_subtitle">Add items to get started</string>
+    <string name="cart_coupon_hint">Have a coupon?</string>
+    <string name="cart_coupon_applied">Coupon applied</string>
+    <string name="cart_apply">Apply</string>
+    <string name="cart_bill_details">Bill details</string>
+    <string name="cart_subtotal">Subtotal</string>
+    <string name="cart_delivery_fee">Delivery fee</string>
+    <string name="cart_free">FREE</string>
+    <string name="cart_coupon_discount">Coupon discount</string>
+    <string name="cart_you_save">You save</string>
+    <string name="cart_total">Total</string>
+    <string name="cart_checkout">Proceed to checkout</string>
+    <string name="cart_add">Add to Bag</string>
+
+    <!-- Auth -->
+    <string name="auth_welcome_back">Welcome back</string>
+    <string name="auth_welcome_back_sub">Sign in to keep shopping</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_email_hint">you@example.com</string>
+    <string name="auth_password">Password</string>
+    <string name="auth_password_hint">Your password</string>
+    <string name="auth_forgot">Forgot password?</string>
+    <string name="auth_sign_in">Sign in</string>
+    <string name="auth_new_here">New to Duggu Store?</string>
+    <string name="auth_create_account">Create an account</string>
+    <string name="auth_skip">Skip and browse as guest</string>
+    <string name="auth_create_title">Create account</string>
+    <string name="auth_create_sub">Groceries at your door in minutes</string>
+    <string name="auth_full_name">Full name</string>
+    <string name="auth_full_name_hint">Your name</string>
+    <string name="auth_phone">Phone number</string>
+    <string name="auth_phone_hint">10-digit number</string>
+    <string name="auth_password_min_hint">At least 6 characters</string>
+    <string name="auth_confirm_password">Confirm password</string>
+    <string name="auth_confirm_password_hint">Repeat the password</string>
+    <string name="auth_i_want_to">I want to</string>
+    <string name="auth_role_shop">Buy</string>
+    <string name="auth_role_sell">Sell</string>
+    <string name="auth_role_deliver">Deliver</string>
+    <string name="auth_have_account">Already have an account?</string>
+    <string name="auth_err_name">Please enter your name</string>
+    <string name="auth_err_email">Please enter your email</string>
+    <string name="auth_err_phone">Please enter your phone number</string>
+    <string name="auth_err_password_short">Password must be at least 6 characters</string>
+    <string name="auth_err_password_match">Passwords don\'t match</string>
+    <string name="auth_err_email_invalid">That doesn\'t look like an email address</string>
+    <string name="auth_err_phone_invalid">Enter a 10-digit phone number</string>
+    <string name="auth_step_of">Step %1$d of %2$d</string>
+    <string name="auth_next">Next</string>
+    <string name="auth_back">Back</string>
+    <string name="auth_welcome_title">Welcome to Duggu</string>
+
+    <!-- Register: step headings -->
+    <string name="auth_step_name_title">What\'s your name?</string>
+    <string name="auth_step_name_body">This is the name sellers and riders will see on your orders.</string>
+    <string name="auth_step_name_illustration">A little personal touch makes every order feel right.</string>
+    <string name="auth_step_email_title">What\'s your email?</string>
+    <string name="auth_step_email_body">You\'ll sign in with this, and we\'ll send order updates here.</string>
+    <string name="auth_step_email_illustration">We\'ll never spam you — just order updates and receipts.</string>
+    <string name="auth_step_phone_title">Your phone number</string>
+    <string name="auth_step_phone_body">A rider or the store calls this number if they can\'t find you.</string>
+    <string name="auth_step_phone_illustration">Only used if a rider or store needs to reach you about an order.</string>
+    <string name="auth_phone_progress">%1$d of 10 digits</string>
+    <string name="auth_step_role_title">How will you use Duggu Store?</string>
+    <string name="auth_step_role_body">Pick the one that fits — sellers and riders get a short verification after this.</string>
+    <string name="auth_role_shop_blurb">Order groceries and essentials for delivery.</string>
+    <string name="auth_role_sell_blurb">List your store\'s products and take orders.</string>
+    <string name="auth_role_deliver_blurb">Pick up orders nearby and earn per delivery.</string>
+    <string name="auth_step_password_title">Create a password</string>
+    <string name="auth_step_password_body">You\'ll use this with your email every time you sign in.</string>
+    <string name="auth_step_password_illustration">Choose something only you would guess.</string>
+    <string name="auth_requirement_password_length">At least 6 characters</string>
+    <string name="auth_requirement_password_match">Both passwords match</string>
+    <string name="auth_step_referral_title">Got a referral code?</string>
+    <string name="auth_step_referral_body">Optional. If a friend shared their code, you both get wallet credit.</string>
+    <string name="auth_referral_code_label">Referral code</string>
+    <string name="auth_referral_code_hint">Leave empty if you don\'t have one</string>
+    <string name="auth_summary_title">Your details</string>
+    <string name="auth_summary_name">Name</string>
+    <string name="auth_summary_email">Email</string>
+    <string name="auth_summary_phone">Phone</string>
+    <string name="auth_summary_role">Joining as</string>
+    <string name="auth_summary_edit_hint">Something wrong? Tap back to fix it.</string>
+
+    <!-- Register: terms acknowledgement -->
+    <string name="auth_terms_prefix">I agree to the</string>
+    <string name="auth_terms_link">Terms &amp; Privacy Policy</string>
+    <string name="auth_err_terms">Please accept the Terms &amp; Privacy Policy to continue</string>
+    <string name="auth_terms_dialog_body">By using Duggu Store you agree to order responsibly and provide accurate delivery details. Sellers and riders are verified before they can operate on the platform.\n\nWe store your name, phone number, addresses and order history to fulfil your orders, and your location only while placing an order or, for sellers and riders, to route pickups and deliveries. This data is never sold to third parties.</string>
+    <string name="dialog_close">Close</string>
+
+    <!-- Forgot password -->
+    <string name="auth_forgot_title">Reset Your Duggu Password</string>
+    <string name="auth_forgot_sent_title">Check your email</string>
+    <string name="auth_forgot_sent_subtitle">The link is on its way</string>
+    <string name="auth_forgot_sent_body">If an account exists for that address, we\'ve sent it a link to set a new password. Open it on this phone and the app will take you to the next step.</string>
+    <string name="auth_send_reset_link">Send reset link</string>
+    <string name="auth_back_to_sign_in">Back to sign in</string>
+
+    <!-- Reset password -->
+    <string name="auth_reset_title">New password</string>
+    <string name="auth_reset_subtitle">You\'ll be signed in straight after</string>
+    <string name="auth_new_password">New password</string>
+    <string name="auth_confirm_new_password">Confirm new password</string>
+    <string name="auth_save_password">Save password</string>
+    <string name="auth_cancel">Cancel</string>
+
+    <!-- Verify email -->
+    <string name="auth_verify_title">Verify your email</string>
+    <string name="auth_verify_subtitle">Enter the 6-digit code we sent you</string>
+    <string name="auth_sent_to">Sent to</string>
+    <string name="auth_verify_button">Verify</string>
+    <string name="auth_resend_success">New code sent. Check your inbox.</string>
+    <string name="auth_resend_code">Resend code</string>
+    <string name="auth_resend_cooldown">Resend in %1$ds</string>
+
+    <!-- Welcome / onboarding slides -->
+    <string name="welcome_slide1_title">Groceries in minutes</string>
+    <string name="welcome_slide1_body">Fruit, milk, snacks and daily essentials from stores near you — ordered in a few taps, at your door in minutes.</string>
+    <string name="welcome_slide2_title">Follow every order live</string>
+    <string name="welcome_slide2_body">See when the store starts packing, when a rider picks it up, and exactly where they are on the map until it arrives.</string>
+    <string name="welcome_slide3_title">Or earn with us</string>
+    <string name="welcome_slide3_body">Sign up as a seller to list your store\'s products, or as a delivery partner to take orders in your area. We\'ll walk you through it.</string>
+    <string name="welcome_skip">Skip</string>
+    <string name="welcome_next">Next</string>
+    <string name="welcome_get_started">Get started</string>
+    <string name="welcome_have_account">Already have an account?</string>
+    <string name="welcome_log_in">Log in</string>
+
+    <!-- Account -->
+    <string name="account_my_orders">My orders</string>
+    <string name="account_my_orders_sub">Track and review past orders</string>
+    <string name="account_favourites_sub">Products you saved</string>
+    <string name="account_addresses">Addresses</string>
+    <string name="account_addresses_sub">Where your orders are delivered</string>
+    <string name="account_wallet">My wallet</string>
+    <string name="account_wallet_sub">Cashback and refund balance</string>
+    <string name="account_notifications">Notifications</string>
+    <string name="account_notifications_sub">Order updates and offers</string>
+    <string name="account_refer">Refer &amp; earn</string>
+    <string name="account_refer_sub">Share your code, earn wallet credit</string>
+    <string name="account_settings">Settings</string>
+    <string name="account_settings_sub">Profile, password, and more</string>
+    <string name="account_sign_out">Sign out</string>
+    <string name="account_sign_out_sub">Log out of this device</string>
+    <string name="account_user">User</string>
+
+    <!-- Seller order announcements -->
+    <string name="seller_order_announcement">New order received. %1$d rupees.</string>
+    <string name="seller_alerts_on">Announcing new orders</string>
+    <string name="seller_alerts_off">New orders announced silently</string>
+    <string name="seller_alerts_on_action">Turn off</string>
+    <string name="seller_alerts_off_action">Turn on</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_empty_title">Nothing new</string>
+    <string name="notifications_empty_sub">Updates about your orders will show up here</string>
+    <string name="notifications_mark_all_read">Mark all read</string>
+
+    <!-- Checkout -->
+    <string name="checkout_delivery_address">Delivery address</string>
+    <string name="checkout_add_address">Add a delivery address</string>
+    <string name="checkout_address_required">Required before placing an order</string>
+    <string name="checkout_manage_addresses">Manage addresses</string>
+    <string name="checkout_payment">Payment</string>
+    <string name="checkout_cod">Cash on delivery</string>
+    <string name="checkout_cod_sub">Pay when your order arrives</string>
+    <string name="checkout_online">Pay online</string>
+    <string name="checkout_online_sub">UPI, cards, netbanking &amp; wallets</string>
+    <string name="checkout_pay_online">Pay · ₹%1$s</string>
+    <string name="checkout_use_wallet">Use wallet balance</string>
+    <string name="checkout_wallet_available">₹%1$s available</string>
+    <string name="checkout_order_summary">Order summary</string>
+    <string name="checkout_line_item">%1$d × %2$s</string>
+    <string name="checkout_wallet_used">Wallet used</string>
+    <string name="checkout_select_address">Select a delivery address to continue</string>
+    <string name="checkout_minimum_order">Add ₹%1$s more to place an order (minimum ₹%2$s)</string>
+    <string name="checkout_place_order">Place order · ₹%1$s</string>
+
+    <!-- Order tracking -->
+    <string name="orders_title">My orders</string>
+    <string name="orders_count">%1$d orders</string>
+    <string name="orders_one">1 order</string>
+    <string name="orders_search_hint">Search orders by product name</string>
+    <string name="orders_filter_all">All</string>
+    <string name="orders_filter_active">Active</string>
+    <string name="orders_filter_delivered">Delivered</string>
+    <string name="orders_filter_cancelled">Cancelled</string>
+    <string name="orders_empty_title">No orders yet</string>
+    <string name="orders_empty_subtitle">Your orders will show up here once you place one</string>
+    <string name="orders_no_match_title">No matching orders</string>
+    <string name="orders_no_match_subtitle">Try a different search or filter</string>
+    <string name="orders_reorder_prompt">Running low? Reorder from #%1$s</string>
+    <string name="orders_loading_items">Loading items…</string>
+    <string name="orders_one_item">1 item</string>
+    <string name="orders_item_plus_more">%1$s +%2$d more</string>
+    <string name="orders_number">Order #%1$s</string>
+    <string name="orders_status">Status</string>
+    <string name="orders_delivering_to">Delivering to</string>
+    <string name="orders_items_in_order">Items in this order</string>
+    <string name="orders_item_fallback">Item</string>
+    <string name="orders_quantity">×%1$d</string>
+    <string name="orders_your_rating">Your rating</string>
+    <string name="orders_rate_item">Rate this item</string>
+    <string name="orders_rate_star">Rate %1$d star</string>
+    <string name="orders_rate_stars">Rate %1$d stars</string>
+    <string name="orders_reorder">Reorder these items</string>
+    <string name="orders_reminder_set">We\'ll remind you to reorder this in about a week</string>
+    <string name="orders_remind_me">Remind me to reorder in a week</string>
+    <string name="orders_report_problem">Report a problem</string>
+    <string name="orders_issue_reviewing">Issue reported — the seller is reviewing it</string>
+    <string name="orders_issue_resolved">Resolved — ₹%1$s credited to your wallet</string>
+    <string name="orders_issue_rejected">Your report was reviewed and rejected</string>
+    <string name="orders_progress">Progress</string>
+    <string name="orders_step_placed">Order placed</string>
+    <string name="orders_step_confirmed">Order confirmed</string>
+    <string name="orders_step_preparing">Being prepared</string>
+    <string name="orders_step_ready">Ready for pickup</string>
+    <string name="orders_step_out">Out for delivery</string>
+    <string name="orders_step_delivered">Delivered</string>
+    <string name="orders_cancel">Cancel order</string>
+    <string name="orders_cancelled_title">Order cancelled</string>
+    <string name="orders_cancelled_subtitle">This order will not be delivered</string>
+    <string name="orders_issue_details_hint">Tell us more (optional)</string>
+    <string name="orders_submit">Submit</string>
+    <string name="orders_issue_missing">Missing item</string>
+    <string name="orders_issue_damaged">Damaged item</string>
+    <string name="orders_issue_wrong">Wrong item</string>
+    <string name="orders_issue_quality">Quality issue</string>
+    <string name="orders_issue_other">Other</string>
+
+    <!-- Common -->
+    <string name="common_back">Back</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_save">Save</string>
+
+    <!-- Product detail -->
+    <string name="pd_load_error">Couldn\'t load this product</string>
+    <string name="pd_go_back">Go back</string>
+    <string name="pd_add_favourite">Add to favourites</string>
+    <string name="pd_remove_favourite">Remove from favourites</string>
+    <string name="pd_per_unit">Per %1$s</string>
+    <string name="pd_in_stock">In stock · %1$d left</string>
+    <string name="pd_out_of_stock">Out of stock</string>
+    <string name="pd_fast_delivery">Fast delivery</string>
+    <string name="pd_quality_checked">Quality checked</string>
+    <string name="pd_description">Description</string>
+    <string name="pd_ratings_reviews">Ratings &amp; reviews</string>
+    <string name="pd_one_review">(1 review)</string>
+    <string name="pd_review_count">(%1$d reviews)</string>
+    <string name="pd_verified_buyer">Verified buyer</string>
+
+    <string name="pd_share">Share</string>
+    <string name="pd_share_title">Share this product</string>
+    <string name="pd_inclusive_taxes">inclusive of all taxes</string>
+    <string name="pd_one_rating">(1 rating)</string>
+    <string name="pd_rating_count">(%1$d ratings)</string>
+    <string name="pd_best_offers">Best offers</string>
+    <string name="pd_swipe_more">Swipe for more</string>
+    <string name="pd_offer_percent">%1$d%% off on this order</string>
+    <string name="pd_offer_min_order">On orders above \u20b9%1$d</string>
+    <string name="pd_offer_max_discount">Up to \u20b9%1$d off</string>
+    <string name="pd_tap_to_copy">Tap to copy</string>
+    <string name="pd_code_copied">Code copied</string>
+    <string name="pd_product_details">Product details</string>
+    <string name="pd_spec_category">Category</string>
+    <string name="pd_spec_pack_size">Pack size</string>
+    <string name="pd_spec_type">Type</string>
+    <string name="pd_type_veg">Vegetarian</string>
+    <string name="pd_type_non_veg">Non-vegetarian</string>
+    <string name="pd_spec_availability">Availability</string>
+    <string name="pd_spec_in_stock">In stock (%1$d available)</string>
+    <string name="pd_spec_out_of_stock">Currently out of stock</string>
+    <string name="pd_spec_discount">Discount</string>
+    <string name="pd_spec_discount_value">%1$d%% off \u2014 you save \u20b9%2$s</string>
+    <string name="pd_spec_listed_on">Listed on</string>
+    <string name="pd_delivery_services">Delivery &amp; services</string>
+    <string name="pd_delivery_eta">Delivery in %1$s</string>
+    <string name="pd_delivery_eta_sub">Track your rider live on the map from the Orders screen</string>
+    <string name="pd_cod">Cash on delivery available</string>
+    <string name="pd_cod_sub">Pay the rider when your order arrives \u2014 no advance needed</string>
+    <string name="pd_returns">Easy 7-day resolution</string>
+    <string name="pd_returns_sub">Something wrong? Report it after delivery and get a wallet refund</string>
+    <string name="pd_secure_payments">Safe &amp; secure payments</string>
+    <string name="pd_secure_payments_sub">Card details are never stored in the app</string>
+    <string name="pd_highlights">Why you\'ll like it</string>
+    <string name="pd_highlight_save">You save \u20b9%1$s on this item</string>
+    <string name="pd_highlight_low_stock">Only %1$d left in stock</string>
+    <string name="pd_highlight_stock">%1$d in stock, ready to ship</string>
+    <string name="pd_highlight_veg">Vegetarian product</string>
+    <string name="pd_highlight_pack">Sold as %1$s</string>
+    <string name="pd_no_reviews">No ratings yet</string>
+    <string name="pd_no_reviews_sub">Be the first to rate this product after your order arrives</string>
+    <string name="pd_no_written_reviews">Ratings are in \u2014 no one has written a review yet.</string>
+    <string name="pd_verified_purchase">Verified purchase</string>
+    <string name="pd_similar_products">Similar products</string>
+    <string name="pd_more_from_store">More from this store</string>
+    <string name="pd_total">Total</string>
+    <string name="pd_add_to_bag">Add to Bag</string>
+    <string name="pd_go_to_bag">Go to Bag</string>
+    <string name="pd_in_bag">%1$d in your bag</string>
+    <string name="pd_in_bag_short">%1$d in bag</string>
+    <string name="pd_decrease">Decrease quantity</string>
+    <string name="pd_increase">Increase quantity</string>
+
+    <!-- Categories -->
+    <string name="categories_title">Categories</string>
+    <string name="categories_subtitle">Everything the store carries, category by category</string>
+    <string name="categories_empty_title">No categories yet</string>
+    <string name="categories_empty_subtitle">Categories appear here once the store has some</string>
+    <string name="categories_nothing_here">Nothing here yet</string>
+
+    <!-- Favourites -->
+    <string name="favourites_title">Wishlist</string>
+    <string name="favourites_one">1 product</string>
+    <string name="favourites_count">%1$d products</string>
+    <string name="favourites_empty_title">Your wishlist is empty</string>
+    <string name="favourites_empty_subtitle">Tap the heart on a product to save it here</string>
+
+    <!-- Addresses -->
+    <string name="addresses_choose">Choose address</string>
+    <string name="addresses_title">My addresses</string>
+    <string name="addresses_one_saved">1 saved</string>
+    <string name="addresses_count_saved">%1$d saved</string>
+    <string name="addresses_empty_title">No addresses yet</string>
+    <string name="addresses_empty_subtitle">Add a delivery address to place an order</string>
+    <string name="addresses_add_new">Add new address</string>
+    <string name="addresses_default">Default address</string>
+    <string name="addresses_set_default">Set as default</string>
+    <string name="addresses_default_badge">DEFAULT</string>
+    <string name="addresses_edit_label">Edit %1$s</string>
+    <string name="addresses_delete_label">Delete %1$s</string>
+    <string name="addresses_add_title">Add address</string>
+    <string name="addresses_edit_title">Edit address</string>
+    <string name="addresses_field_label">Label</string>
+    <string name="addresses_label_hint">Home, Work…</string>
+    <string name="addresses_full_address">Full address</string>
+    <string name="addresses_default_home">Home</string>
+
+    <!-- Wallet -->
+    <string name="wallet_title">My wallet</string>
+    <string name="wallet_usable">Usable on your next order</string>
+    <string name="wallet_empty_title">No wallet activity yet</string>
+    <string name="wallet_empty_subtitle">Refunds and referral bonuses show up here</string>
+    <string name="wallet_refer_title">Refer &amp; earn ₹50</string>
+    <string name="wallet_your_code">Your code: %1$s</string>
+    <string name="wallet_share_message">Use my Duggu Store referral code %1$s and we both get ₹50 wallet credit!</string>
+    <string name="wallet_share_chooser">Share referral code</string>
+    <string name="wallet_share">Share</string>
+    <string name="wallet_credit">CREDIT</string>
+
+    <!-- Cart (additional) -->
+    <string name="cart_remove_item">Remove %1$s</string>
+    <string name="cart_minimum_order">Add ₹%1$s more to place an order (minimum ₹%2$s)</string>
+
+    <!-- Quick shop: the category sheet opened from a home tile -->
+    <string name="quick_shop_count">%1$d products</string>
+    <string name="quick_shop_loading">Loading products…</string>
+    <string name="quick_shop_empty">Nothing in this category right now</string>
+    <string name="quick_shop_none_match">No products match this filter</string>
+    <string name="quick_shop_view_all">View all %1$d products</string>
+    <string name="quick_filter_all">All</string>
+    <string name="quick_filter_offers">Offers</string>
+    <string name="quick_filter_under">Under ₹%1$s</string>
+    <string name="quick_filter_veg">Veg only</string>
+
+    <!-- Seller: quick sell, the category tiles above the product list -->
+    <string name="seller_quick_sell_title">Quick sell</string>
+    <string name="seller_quick_sell_subtitle">Tap a category to list a product in it</string>
+
+    <!-- Quick checkout: the sheet that places the order from the bag -->
+    <string name="quick_checkout_title">Quick checkout</string>
+    <string name="quick_checkout_subtitle">Delivery address and total, one tap to confirm</string>
+    <string name="quick_checkout_deliver_to">Deliver to</string>
+    <string name="quick_checkout_summary">Order summary</string>
+    <string name="quick_checkout_add_address">Add delivery address</string>
+    <string name="quick_checkout_no_address">You need a saved address before you can order</string>
+    <string name="quick_checkout_address_fallback">Address</string>
+    <string name="quick_checkout_default">DEFAULT</string>
+    <string name="quick_checkout_items">%1$d items</string>
+    <string name="quick_checkout_to_pay">To pay</string>
+    <string name="quick_checkout_wallet">Use wallet balance</string>
+    <string name="quick_checkout_wallet_available">₹%1$d available</string>
+    <string name="quick_checkout_cod">Paying by cash on delivery</string>
+    <string name="quick_checkout_place">Place Order · ₹%1$s</string>
+    <string name="quick_checkout_review">Open full checkout</string>
+    <string name="cart_full_checkout">Addresses, coupons &amp; full bill</string>
+
+    <!-- Order placed confirmation -->
+    <string name="order_placed_title">Order placed!</string>
+    <string name="order_placed_body">Your order is with the store. You can follow it from Orders.</string>
+    <string name="order_placed_track">Track order</string>
+    <string name="order_placed_continue">Continue shopping</string>
+</resources>

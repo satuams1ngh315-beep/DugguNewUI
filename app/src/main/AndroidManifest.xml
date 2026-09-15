@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Voice search runs the recogniser in-process so the sheet can be ours
+         rather than Google's, which means recording the audio ourselves. -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <!-- Push notifications (order/store updates delivered even while the app is closed). -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!--
+        Package visibility: from API 30 an app cannot see other packages unless it
+        declares what it is looking for, and SpeechRecognizer.isRecognitionAvailable
+        returns false without this.
+    -->
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".DugguStoreApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Duggu Store"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DugguStore"
+        tools:targetApi="34">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DugguStore"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!--
+                Supabase redirects here after the user opens a password-reset mail.
+                The matching URL must be on the Redirect URLs allow list in
+                Authentication -> URL Configuration, or Supabase refuses the redirect.
+                singleTask above means a running app receives it via onNewIntent
+                instead of starting a second copy.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="duggustore"
+                    android:host="auth-callback" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            Handoff for the camera: TakePicture writes the full-resolution photo
+            to a file the camera app can reach, and this is what turns that file
+            into a content:// Uri the camera app is allowed to write to without
+            granting it broader storage access.
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Pulls the image labeller down at install time rather than on the
+             first tap of the camera button, so search-by-photo doesn't stall
+             the first time someone reaches for it. -->
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ica" />
+
+        <!-- Receives a push even while the app is closed or killed; data-only
+             payloads (no top-level "notification" block) so this always
+             handles displaying it, rather than the OS doing it inconsistently. -->
+        <service
+            android:name=".platform.DugguFcmService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The rider's own position on the route map: a teal dot with a white
+     halo, like the "you are here" marker in most map apps, rather than
+     osmdroid's default red teardrop pin used for every marker regardless
+     of what it means. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M14,14m-13,0a13,13 0,1 1,26 0a13,13 0,1 1,-26 0" />
+    <path
+        android:fillColor="#2BB3AC"
+        android:pathData="M14,14m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0" />
+</vector>

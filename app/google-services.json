@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "245791582484",
+    "project_id": "duggu-store-org",
+    "storage_bucket": "duggu-store-org.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245791582484:android:7665b9a96d74803382fa01",
+        "android_client_info": {
+          "package_name": "com.duggustore.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyjbQ8e997NeVzmD2vhvDEPA79Gjbf7HU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245791582484:android:26756cfcee0eedb482fa01",
+        "android_client_info": {
+          "package_name": "com.duggustore.app.debug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyjbQ8e997NeVzmD2vhvDEPA79Gjbf7HU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

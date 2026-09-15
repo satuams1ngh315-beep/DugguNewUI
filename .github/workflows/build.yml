@@ -1,0 +1,164 @@
+name: Duggu Store Build
+
+on:
+  push:
+    branches: [ main, master, 'claude/**', 'arena/**' ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # contents: write is what lets the "Comment errors on commit" step below
+    # post, and what the release-Bundle/upload steps expect anyway.
+    permissions:
+      contents: write
+    env:
+      # GitHub's workflow parser rejects a step-level `if:` that references
+      # `secrets` directly (the whole workflow fails to schedule any job,
+      # not just that step) — so the check happens once here, as a plain
+      # env var, and steps below test that instead.
+      HAS_RELEASE_KEYSTORE: ${{ secrets.RELEASE_KEYSTORE_BASE64 != '' }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v6
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v6
+        with:
+          validate-wrappers: false
+
+      - name: Create local.properties
+        run: |
+          echo "SUPABASE_URL=${{ secrets.SUPABASE_URL }}" > local.properties
+          echo "SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }}" >> local.properties
+          echo "RAZORPAY_KEY_ID=${{ secrets.RAZORPAY_KEY_ID }}" >> local.properties
+
+      # Only writes anything when RELEASE_KEYSTORE_BASE64 is actually set as
+      # a repo secret — until then this is a no-op and the release build
+      # stays unsigned exactly as it always has (build.gradle.kts checks the
+      # same properties before wiring up a signing config).
+      - name: Set up release signing
+        if: env.HAS_RELEASE_KEYSTORE == 'true'
+        run: |
+          mkdir -p keystore
+          echo "${{ secrets.RELEASE_KEYSTORE_BASE64 }}" | base64 -d > keystore/duggustore-release.jks
+          echo "RELEASE_STORE_FILE=keystore/duggustore-release.jks" >> local.properties
+          echo "RELEASE_STORE_PASSWORD=${{ secrets.RELEASE_STORE_PASSWORD }}" >> local.properties
+          echo "RELEASE_KEY_ALIAS=${{ secrets.RELEASE_KEY_ALIAS }}" >> local.properties
+          echo "RELEASE_KEY_PASSWORD=${{ secrets.RELEASE_KEY_PASSWORD }}" >> local.properties
+
+      - name: Build Debug APK
+        # pipefail: without it the pipe returns tee's status, so a failed
+        # Gradle run looked like a success and only surfaced later as a
+        # missing APK.
+        run: set -o pipefail; ./gradlew assembleDebug --stacktrace 2>&1 | tee /tmp/build-debug.log
+
+      - name: Build Release APK
+        run: set -o pipefail; ./gradlew assembleRelease --stacktrace 2>&1 | tee /tmp/build.log
+
+      # Surfaces the actual compiler/R8 errors on the run itself.
+      #
+      # This used to grep only /tmp/build.log — the release build's log — so
+      # a debug-build failure (the common case, and the one this step exists
+      # for) reported nothing at all, because the debug log is written to
+      # /tmp/build-debug.log. Both logs are read now. The errors are emitted
+      # as annotations, of which GitHub accepts 10 at error level, so the
+      # rest follow as warnings to stay inside the 50-per-step cap.
+      - name: Report build errors
+        if: failure()
+        run: |
+          cat /tmp/build-debug.log /tmp/build.log 2>/dev/null > /tmp/errors-all.log || true
+          echo "----- tail of build output -----"
+          tail -60 /tmp/errors-all.log || true
+          echo "----- errors -----"
+          grep -nE "^e: |error:|FAILURE|What went wrong|Execution failed|Caused by:|Unresolved reference" \
+            /tmp/errors-all.log | head -40 > /tmp/errors.txt || true
+          cat /tmp/errors.txt || true
+          i=0
+          while IFS= read -r line; do
+            i=$((i + 1))
+            if [ "$i" -le 10 ]; then
+              echo "::error::${line}"
+            else
+              echo "::warning::${line}"
+            fi
+          done < /tmp/errors.txt
+
+      # A commit comment with the same errors, so the failure is diagnosable
+      # from the API/GitHub UI even when the run's raw log archive is not
+      # reachable. Best-effort: a permissions failure here must not turn one
+      # failed build into two.
+      - name: Comment errors on commit
+        if: failure()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ ! -s /tmp/errors.txt ]; then exit 0; fi
+          {
+            echo "### ❌ Build failed — compiler errors"
+            echo
+            echo '```'
+            head -40 /tmp/errors.txt
+            echo '```'
+          } > /tmp/comment.md
+          gh api "repos/${{ github.repository }}/commits/${{ github.sha }}/comments" \
+            -f body="$(cat /tmp/comment.md)" > /dev/null
+
+      - name: Build Release Bundle (AAB)
+        if: env.HAS_RELEASE_KEYSTORE == 'true'
+        run: ./gradlew bundleRelease --stacktrace
+
+      - name: Upload Debug APK
+        # Non-fatal on purpose: the APK is already built by this point, and
+        # GitHub's artifact storage is a per-account quota that can be full
+        # ("Artifact storage quota has been hit") without anything being wrong
+        # with the code. A red build should mean the app doesn't compile, not
+        # that a convenience copy of it couldn't be stored.
+        continue-on-error: true
+        uses: actions/upload-artifact@v7
+        with:
+          name: duggu-store-debug
+          path: app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 30
+
+      - name: Upload Release APK
+        # Non-fatal on purpose: the APK is already built by this point, and
+        # GitHub's artifact storage is a per-account quota that can be full
+        # ("Artifact storage quota has been hit") without anything being wrong
+        # with the code. A red build should mean the app doesn't compile, not
+        # that a convenience copy of it couldn't be stored.
+        continue-on-error: true
+        uses: actions/upload-artifact@v7
+        with:
+          name: duggu-store-release
+          # Signed once RELEASE_KEYSTORE_BASE64 is set (app-release.apk),
+          # unsigned until then — but the unsigned name isn't always
+          # app-release-unsigned.apk, so match whatever Gradle actually
+          # wrote rather than guessing at the two names it might use.
+          path: app/build/outputs/apk/release/*.apk
+          retention-days: 30
+          if-no-files-found: error
+
+      - name: Upload Release Bundle (AAB)
+        # Non-fatal on purpose: the APK is already built by this point, and
+        # GitHub's artifact storage is a per-account quota that can be full
+        # ("Artifact storage quota has been hit") without anything being wrong
+        # with the code. A red build should mean the app doesn't compile, not
+        # that a convenience copy of it couldn't be stored.
+        continue-on-error: true
+        if: env.HAS_RELEASE_KEYSTORE == 'true'
+        uses: actions/upload-artifact@v7
+        with:
+          name: duggu-store-release-bundle
+          path: app/build/outputs/bundle/release/app-release.aab
+          retention-days: 30

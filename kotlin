@@ -1,0 +1,73 @@
+1. Install package
+Run this command to install the required dependencies.
+Code:
+File: Code
+```
+implementation("io.github.jan-tennert.supabase:supabase-kt:VERSION")
+```
+
+2. Add files
+Copy the following code into your project.
+Code:
+File: MainActivity.kt
+```
+1val supabase = createSupabaseClient(
+2    supabaseUrl = "https://rtceqrzicxrxaajfrerl.supabase.co",
+3    supabaseKey = "sb_publishable_wEgeimJZ9hgDIa6pEN6oag_fD0SXAKF"
+4  ) {
+5    install(Postgrest)
+6}
+7
+8class MainActivity : ComponentActivity() {
+9    override fun onCreate(savedInstanceState: Bundle?) {
+10        super.onCreate(savedInstanceState)
+11        setContent {
+12            MaterialTheme {
+13                // A surface container using the 'background' color from the theme
+14                Surface(
+15                    modifier = Modifier.fillMaxSize(),
+16                    color = MaterialTheme.colorScheme.background
+17                ) {
+18                    TodoList()
+19                }
+20            }
+21        }
+22    }
+23}
+24
+25@Composable
+26fun TodoList() {
+27    var items by remember { mutableStateOf<List<TodoItem>>(listOf()) }
+28    LaunchedEffect(Unit) {
+29        withContext(Dispatchers.IO) {
+30            items = supabase.from("todos")
+31                              .select().decodeList<TodoItem>()
+32        }
+33    }
+34    LazyColumn {
+35        items(
+36            items,
+37            key = { item -> item.id },
+38        ) { item ->
+39            Text(
+40                item.name,
+41                modifier = Modifier.padding(8.dp),
+42            )
+43        }
+44    }
+45}
+```
+
+File: TodoItem.kt
+```
+1@Serializable
+2data class TodoItem(val id: Int, val name: String)
+```
+
+3. Install Agent Skills (optional)
+Agent Skills give AI coding tools ready-made instructions, scripts, and resources for working with Supabase more accurately and efficiently.
+Code:
+File: Code
+```
+npx skills add supabase/agent-skills
+```

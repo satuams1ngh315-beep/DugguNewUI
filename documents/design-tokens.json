@@ -1,0 +1,219 @@
+{
+  "$schema": "duggustore-design-tokens/2.0",
+  "_note": "Single source of truth. The Kotlin theme files (Color.kt, Semantic.kt, Type.kt, Dimens.kt, Motion.kt) are generated from this and must not invent a value that is not here. Every colour entry carries its measured WCAG 2.2 contrast ratio against the surface it is designed to sit on. Values marked FAIL are v1 values retained only for the record.",
+
+  "primitive": {
+    "brand": {
+      "50":  { "hex": "#FFF1F5", "use": "brand-subtle wash" },
+      "100": { "hex": "#FFE4EC" },
+      "200": { "hex": "#FFC9D9" },
+      "300": { "hex": "#FF9BB4", "ratio": { "on": "#111318", "value": "8.06:1" } },
+      "400": { "hex": "#FF6B92", "ratio": { "on": "#111318", "value": "6.88:1", "use": "dark-theme brand TEXT" } },
+      "500": { "hex": "#F5305F", "use": "brand anchor - fills and UI/large only" },
+      "600": { "hex": "#DC2453", "ratio": { "on": "#FFFFFF", "value": "white on this = 4.75:1 PASS AA", "use": "primary CTA fill" } },
+      "700": { "hex": "#B81A45", "ratio": { "on": "#FFFFFF", "value": "6.42:1 PASS AA", "use": "brand TEXT on light" } },
+      "800": { "hex": "#94133A", "ratio": { "on": "#FFFFFF", "value": "8.62:1", "use": "pressed / dense" } },
+      "900": { "hex": "#6E0D2B" }
+    },
+    "neutral": {
+      "0":   { "hex": "#FFFFFF" },
+      "25":  { "hex": "#FCFCFD" },
+      "50":  { "hex": "#F7F7F9", "use": "light canvas" },
+      "100": { "hex": "#F1F1F4", "use": "sunken well / muted fill" },
+      "200": { "hex": "#E6E7EB", "use": "hairline border" },
+      "300": { "hex": "#CFD2DA", "use": "default border" },
+      "400": { "hex": "#8A90A2", "ratio": { "on": "#FFFFFF", "value": "3.19:1" }, "use": "placeholder - UI/large floor only" },
+      "500": { "hex": "#616779", "ratio": { "on": "#FFFFFF", "value": "5.64:1" }, "use": "tertiary text - v1 InkFaint #94969F was 2.95:1 FAIL" },
+      "600": { "hex": "#4A4F63", "ratio": { "on": "#FFFFFF", "value": "8.11:1" }, "use": "secondary text" },
+      "700": { "hex": "#3A3E4F" },
+      "800": { "hex": "#282C3F", "ratio": { "on": "#FFFFFF", "value": "13.80:1" }, "use": "primary text" },
+      "900": { "hex": "#1A1D24", "use": "dark surface" },
+      "950": { "hex": "#111318", "use": "dark canvas" }
+    },
+    "success": {
+      "100": { "hex": "#D6F5E6" },
+      "400": { "hex": "#34D399", "ratio": { "on": "#111318", "value": "9.67:1" } },
+      "500": { "hex": "#10B981", "_v1": "used as TEXT on white = 2.54:1 FAIL" },
+      "600": { "hex": "#047857", "ratio": { "on": "#FFFFFF", "value": "white on this = 5.48:1" } },
+      "700": { "hex": "#03543F", "ratio": { "on": "#FFFFFF", "value": "8.96:1" }, "use": "success text" }
+    },
+    "warning": {
+      "100": { "hex": "#FEF0C7" },
+      "400": { "hex": "#FBBF24", "ratio": { "on": "#111318", "value": "11.13:1" } },
+      "500": { "hex": "#F59E0B", "_v1": "used as TEXT on white = 2.15:1 FAIL", "use": "fills only" },
+      "600": { "hex": "#D97706" },
+      "700": { "hex": "#B45309", "ratio": { "on": "#FFFFFF", "value": "5.02:1" }, "use": "warning text" },
+      "750": { "hex": "#92400E", "ratio": { "on": "#FEF0C7", "value": "6.25:1" }, "use": "text on a warning-subtle chip - warning.700 there measured only 4.42:1, under the 4.5:1 body threshold" }
+    },
+    "danger": {
+      "100": { "hex": "#FEE4E2" },
+      "400": { "hex": "#F87171", "ratio": { "on": "#111318", "value": "6.72:1" } },
+      "500": { "hex": "#F04438", "_v1": "error red as TEXT on white = 3.76:1 FAIL" },
+      "600": { "hex": "#B42318", "ratio": { "on": "#FFFFFF", "value": "6.57:1" }, "use": "error text + fill" },
+      "700": { "hex": "#912018", "ratio": { "on": "#FFFFFF", "value": "9.21:1" }, "use": "pressed" }
+    },
+    "info": {
+      "100": { "hex": "#DBEAFE" },
+      "400": { "hex": "#60A5FA", "ratio": { "on": "#111318", "value": "7.31:1" } },
+      "600": { "hex": "#1D4ED8", "ratio": { "on": "#FFFFFF", "value": "6.70:1" } },
+      "700": { "hex": "#1E40AF" }
+    },
+    "star": {
+      "500": { "hex": "#B45309", "ratio": { "on": "#FFFFFF", "value": "5.02:1" }, "_v1": "#FFB020 on white = 1.83:1 FAIL", "note": "Held to the 4.5:1 TEXT threshold, not the 3:1 graphical one: at 12dp the star glyph and the rating number beside it read as ONE unit. A first draft at #F59E0B still measured only 2.15:1." }
+    },
+    "marks": {
+      "veg":    { "hex": "#0F8A3C", "ratio": { "on": "#FFFFFF", "value": "4.51:1" }, "note": "Regulatory mark with a statutory colour - deliberately NOT aliased to success green, because it does not mean 'success'." },
+      "nonVeg": { "hex": "#7B341E" }
+    },
+    "accents": {
+      "orange500": { "hex": "#F97316", "note": "decorative fills only - as text was 2.80:1 FAIL" },
+      "orange700": { "hex": "#B4470A", "ratio": { "on": "#FFFFFF", "value": "5.35:1" } },
+      "purple500": { "hex": "#8B5CF6" },
+      "purple700": { "hex": "#5B21B6", "ratio": { "on": "#FFFFFF", "value": "7.42:1" } }
+    }
+  },
+
+  "semantic": {
+    "_note": "The ONLY colour surface component code may read. Components ask for a role, never a hue. Light and dark are separate bindings of the same keys.",
+    "light": {
+      "surface": { "canvas": "neutral.50", "default": "neutral.0", "raised": "neutral.0", "sunken": "neutral.100", "inverse": "neutral.800", "brandSubtle": "brand.50", "successSubtle": "success.100", "warningSubtle": "warning.100", "dangerSubtle": "danger.100", "infoSubtle": "info.100", "disabled": "neutral.100" },
+      "text": { "primary": "neutral.800 (13.80:1)", "secondary": "neutral.600 (8.11:1)", "tertiary": "neutral.500 (5.64:1)", "placeholder": "neutral.400 (3.19:1)", "disabled": "neutral.500 (5.00:1 on surface.disabled)", "brand": "brand.700 (6.42:1)", "onBrand": "neutral.0 (4.75:1 on brand.600)", "success": "success.700", "warning": "warning.700", "danger": "danger.600", "info": "info.600", "onInverse": "neutral.0" },
+      "border": { "subtle": "neutral.200", "default": "neutral.300", "strong": "neutral.400", "brand": "brand.600", "focus": "brand.700", "danger": "danger.600" },
+      "action": { "primary": "brand.600", "primaryHover": "brand.700", "primaryPressed": "brand.800", "primaryDisabled": "neutral.200", "onPrimaryDisabled": "neutral.500", "secondary": "neutral.100", "onSecondary": "neutral.800", "danger": "danger.600", "onDanger": "neutral.0" },
+      "status": {
+        "pending":   { "fg": "warning.750", "bg": "warning.100", "ratio": "6.25:1" },
+        "confirmed": { "fg": "info.600",    "bg": "info.100",    "ratio": "5.11:1" },
+        "delivered": { "fg": "success.700", "bg": "success.100", "ratio": "6.02:1" },
+        "cancelled": { "fg": "danger.600",  "bg": "danger.100",  "ratio": "5.24:1" }
+      },
+      "scrim": "#52111318 (32% neutral.950)",
+      "shadow": "#14101318 (8% neutral.950) - v1 used pure black at up to 10dp blur"
+    },
+    "dark": {
+      "_note": "v1 had no dark scheme at all - Theme.kt hard-coded a single light scheme and pinned isAppearanceLightStatusBars = true, so the app ignored the OS setting. Ratios below are measured against the dark canvas #111318.",
+      "surface": { "canvas": "neutral.950", "default": "neutral.900", "raised": "#22252E", "sunken": "#0C0E12", "inverse": "neutral.50", "brandSubtle": "#3A1024", "disabled": "#24262E", "_note": "Dark surfaces step UP in lightness with elevation, because a shadow is invisible on a dark background. That is why border carries more weight here: the border is what communicates elevation." },
+      "text": { "primary": "neutral.50 (17.37:1)", "secondary": "neutral.200 (15.04:1)", "tertiary": "neutral.400 (5.83:1)", "placeholder": "#6E7488 (4.00:1)", "disabled": "neutral.400 (4.74:1 on surface.disabled)", "brand": "brand.400 (6.88:1)", "onBrand": "neutral.950 (4.84:1 on brand.500)", "success": "success.400 (9.67:1)", "warning": "warning.400 (11.13:1)", "danger": "danger.400 (6.72:1)", "info": "info.400 (7.31:1)" },
+      "border": { "subtle": "#2A2D36", "default": "#363A46", "strong": "#4E5364", "brand": "brand.400", "focus": "brand.300 (8.06:1)", "danger": "danger.400" },
+      "action": { "primary": "brand.500", "primaryHover": "brand.400", "primaryPressed": "brand.300", "primaryDisabled": "#2A2D36", "onPrimaryDisabled": "neutral.400 (4.32:1)", "secondary": "#24262E", "onSecondary": "neutral.50", "danger": "danger.400", "onDanger": "neutral.950" }
+    },
+    "brandVariants": {
+      "_note": "Proof the token layer decouples brand from semantics: a full re-skin is about 8 lines and ZERO component files change. The rule these obey - only hue changes, luminance steps stay put. Keeping the 500/600/700 lightness relationship intact is what lets the measured ratios survive the swap.",
+      "saffronOnLight": { "brandText": { "hex": "#A8470B", "ratio": "6.12:1" }, "actionPrimary": { "hex": "#CE5A0E", "ratio": "white on this = 4.66:1" } },
+      "indigoOnLight":  { "brandText": { "hex": "#3730A3", "ratio": "8.79:1" }, "actionPrimary": { "hex": "#4F46E5", "ratio": "white on this = 5.94:1" } }
+    }
+  },
+
+  "typography": {
+    "_note": "v1 defined a reasonable Material Typography and then used it ONCE against 127 raw fontSize literals - 17 distinct sizes with four indistinguishable odd values (11/12/13/14) in heavy use. Now 16 role names over 11 distinct sizes. `micro` is the floor and was raised 9sp -> 10sp, because 9sp (~6pt) is below every platform's readability guidance and the count badge is exactly what must be readable at a glance.",
+    "font": { "family": "Roboto (FontFamily.Default)", "planned": "Inter - taller x-height than Roboto at small sizes, which is what makes 11-13sp legible on the mid-range hardware this app targets. Ship via res/font/inter_*.ttf and swap the family.", "lineHeightStyle": "Trim.Both / Alignment.Center - without this, Compose adds ~2-3dp of invisible padding above the first line and below the last, so 12sp and 14sp text look like different vertical rhythms at the same stated line height. That is the main reason v1's cards felt subtly uneven." },
+    "scale": {
+      "display.lg":  { "size": 34, "line": 40, "weight": 800, "tracking": -0.8 },
+      "display.md":  { "size": 28, "line": 34, "weight": 700, "tracking": -0.6 },
+      "heading.lg":  { "size": 22, "line": 28, "weight": 700, "tracking": -0.3 },
+      "heading.md":  { "size": 19, "line": 25, "weight": 700, "tracking": -0.2 },
+      "heading.sm":  { "size": 17, "line": 23, "weight": 600, "tracking": -0.1 },
+      "title.lg":    { "size": 16, "line": 22, "weight": 600 },
+      "title.md":    { "size": 15, "line": 21, "weight": 600 },
+      "title.sm":    { "size": 14, "line": 19, "weight": 600, "use": "button + tab labels" },
+      "body.lg":     { "size": 15, "line": 22, "weight": 400 },
+      "body.md":     { "size": 14, "line": 20, "weight": 400 },
+      "body.sm":     { "size": 13, "line": 18, "weight": 400 },
+      "caption":     { "size": 12, "line": 16, "weight": 500, "tracking": 0.1 },
+      "overline":    { "size": 11, "line": 14, "weight": 600, "tracking": 0.6 },
+      "micro":       { "size": 10, "line": 13, "weight": 500, "tracking": 0.2, "use": "nav label, count badge - THE FLOOR" },
+      "price.lg":    { "size": 20, "line": 24, "weight": 700, "tracking": -0.2, "use": "cart total, PDP price" },
+      "price.md":    { "size": 15, "line": 19, "weight": 700, "use": "product card price" },
+      "price.strike":{ "size": 12, "line": 16, "weight": 400, "use": "MRP, line-through" }
+    },
+    "rules": {
+      "prices": "Tabular figures - a price is scanned, not read. A column of prices must align on the decimal so two products can be compared without parsing digits.",
+      "labels": "Static labels. v1 swapped placeholder -> label in several forms, which left a FILLED field with no visible name, so a user reviewing their saved address could not tell which line was the flat number."
+    }
+  },
+
+  "space": {
+    "_note": "A CLOSED 4dp grid. v1 declared 6 spacing values and then used 40 different dp values (5,7,9,11,13,17,19,22,26,34...). Anything with a name and no enforcement drifts; there are 11 steps now and nothing else.",
+    "scale": { "0": 0, "1": 4, "2": 8, "3": 12, "4": 16, "5": 20, "6": 24, "8": 32, "10": 40, "12": 48, "16": 64 },
+    "semantic": { "screenGutter": 16, "sectionGap": 24, "cardPadding": 12, "rowGap": 8, "inlineGap": 8, "stackTight": 4, "stackLoose": 12 },
+    "v1Migration": { "5": 4, "6": "4 or 8", "7": 8, "9": "8 or 12", "10": 12, "11": 12, "13": 12, "14": 16, "15": 16, "17": 16, "18": "16 or 20", "19": 20, "22": 24, "26": 24, "34": 32 }
+  },
+
+  "radius": {
+    "_note": "CONTAINMENT RULE: a child's radius must be the same step or smaller than its container's. v1 declared a 14dp card and clipped its own image to 16dp, so the image corners poked 2dp past the card corners - a visible sliver at all four corners of every card in the home grid.",
+    "scale": { "xs": 4, "sm": 8, "md": 12, "lg": 16, "xl": 24, "full": 999 },
+    "usage": { "xs": "badge, veg mark", "sm": "input, chip, stepper", "md": "button, product card", "lg": "sheet, panel", "xl": "bottom-sheet top, modal", "full": "pill, avatar, search bar" },
+    "v1Defects": ["card 14dp vs image 16dp", "14 distinct values used: 2,4,6,9,10,11,12,14,16,18,24 + 50"]
+  },
+
+  "elevation": {
+    "_note": "In light, elevation is a shadow. In dark a shadow is invisible, so elevation is carried by the surface step and the border instead - see semantic.dark.surface.",
+    "0": { "dp": 0 },
+    "1": { "dp": 1, "use": "resting card" },
+    "2": { "dp": 2, "use": "raised card" },
+    "3": { "dp": 6, "use": "sticky header, FAB" },
+    "4": { "dp": 12, "use": "sheet, dialog, snackbar" }
+  },
+
+  "size": {
+    "_note": "WCAG 2.2 SC 2.5.8 requires 24x24 CSS px; Apple HIG and Material both require 48dp. This app is used one-handed on a bus, so it honours the STRICTER 48dp - enforced by Modifier.dugguTouchTarget() rather than by memory.",
+    "minTouchTarget": 48,
+    "iconButton": { "value": 48, "_v1": "40dp, below the floor" },
+    "iconButtonSm": 40,
+    "controlHeight": 52,
+    "controlHeightSm": 40,
+    "fieldHeight": 56,
+    "bottomBarHeight": { "value": 64, "_v1": "62dp - off-grid, and the nav label pushed under the system gesture bar" },
+    "productImageHeight": 128,
+    "cartThumb": { "value": 56, "_v1": "48dp" },
+    "avatarMd": 40,
+    "avatarLg": 56,
+    "badgeMinHeight": { "value": 16, "_v1": "15dp with 9sp text - clipped descenders" },
+    "dividerThickness": { "value": 1, "_v1": "0.5dp hairlines, which vanish on xxhdpi and alias to grey mush" },
+    "focusRingWidth": 3,
+    "focusRingOffset": 2,
+    "icon": { "xs": 16, "sm": 20, "md": 24, "lg": 32, "xl": 48, "_v1": "17,18,19,21,23,24,26,28,34,40,44,56,80dp - thirteen sizes for five actual jobs" }
+  },
+
+  "motion": {
+    "_note": "Duration scales with DISTANCE travelled, not with component type. This is the single biggest reason v1's animation felt inconsistent: a 160ms tab fade and a 280ms full-screen push were both 'one duration' for very different distances.",
+    "durationMs": { "instant": 100, "fast": 160, "standard": 220, "emphasis": 280, "slow": 400, "shimmer": 1200 },
+    "roles": {
+      "STATE_CHANGE":  { "ms": 100, "use": "toggle, checkbox, ripple release - no travel" },
+      "IN_SCREEN":     { "ms": 160, "use": "tab switch, chip select, expand" },
+      "ELEMENT_ENTER": { "ms": 220, "use": "badge, inline error" },
+      "SCREEN_NAV":    { "ms": 280, "use": "full-screen push" },
+      "SURFACE_ENTER": { "ms": 400, "use": "sheet, modal, dialog" }
+    },
+    "easing": {
+      "standard":   [0.2, 0.0, 0.0, 1.0],
+      "decelerate": [0.0, 0.0, 0.0, 1.0],
+      "accelerate": [0.3, 0.0, 1.0, 1.0],
+      "emphasized": [0.05, 0.7, 0.1, 1.0],
+      "linear": "shimmer, progress"
+    },
+    "reduceMotion": {
+      "source": "Settings.Global.ANIMATOR_DURATION_SCALE == 0f - Android's 'Remove animations' accessibility setting, exposed since API 26. Material3's Compose APIs deliberately do not read it for you; v1 never read it at all.",
+      "behaviour": "Every role collapses to a 100ms cross-fade. No slides, no springs, no shimmer sweep, no press-scale. Components ask for a MotionRole and the resolved spec is already collapsed, so no call site can forget.",
+      "whyNotZero": "A true 0ms animation still costs a recomposition and can read as a hard flicker. 100ms of pure opacity is invisible as motion and stays smooth.",
+      "nonVisualFallback": "Under reduce-motion the indeterminate button spinner cannot convey anything either, so the button also sets stateDescription = 'In progress' with liveRegion = Polite."
+    }
+  },
+
+  "contrastSummary": {
+    "_note": "21 pairings measured with the WCAG 2.2 relative-luminance formula. 14 failed in v1. Each v2 replacement is listed with its value.",
+    "fixedInV2": {
+      "text.tertiary on white":     { "v1": "#94969F 2.95:1 FAIL", "v2": "#616779 5.64:1 PASS" },
+      "text.brand on white":        { "v1": "#FF3F6C 3.40:1 FAIL", "v2": "#B81A45 6.42:1 PASS" },
+      "action.primary under white": { "v1": "#FF3F6C 3.40:1 FAIL", "v2": "#DC2453 4.75:1 PASS" },
+      "text.warning on white":      { "v1": "#F97316 2.80:1 FAIL", "v2": "#B45309 5.02:1 PASS" },
+      "text.success on white":      { "v1": "#10B981 2.54:1 FAIL", "v2": "#03543F 8.96:1 PASS" },
+      "text.danger on white":       { "v1": "#F04438 3.76:1 FAIL", "v2": "#B42318 6.57:1 PASS" },
+      "star glyph + rating number": { "v1": "#FFB020 1.83:1 FAIL", "v2": "#B45309 5.02:1 PASS" },
+      "pending chip text":          { "v1": "amber on amber wash", "v2": "#92400E on #FEF0C7 6.25:1 PASS" },
+      "disabled button label":      { "v1": "#BDBFC6 + 0.38 alpha = ~1.5:1, read as an empty rectangle", "v2": "#616779 5.00:1 - WCAG exempts disabled text, but exempt is not the same as invisible, so no second attenuation is applied on top" }
+    },
+    "addedInV2": {
+      "dark canvas text": "v1 had no dark scheme. All dark ratios above are measured against #111318, not the light canvas."
+    }
+  }
+}
