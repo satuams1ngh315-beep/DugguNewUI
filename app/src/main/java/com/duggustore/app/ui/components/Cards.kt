@@ -14,6 +14,15 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Category
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.FavoriteBorder
+import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.filled.KeyboardArrowUp
+import androidx.compose.material.icons.filled.Place
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -418,7 +427,7 @@ fun DugguStoreCard(
             contentAlignment = Alignment.Center
         ) {
             Icon(
-                androidx.compose.material.icons.Icons.Default.Place,
+                androidx.compose.material.icons.Icons.Default.Filled.Place,
                 contentDescription = null,
                 Modifier.size(Dimens.iconMd),
                 tint = c.text.tertiary
@@ -434,7 +443,7 @@ fun DugguStoreCard(
             // made it impossible to tell "closed" from "loading failed".
             StatusChip(
                 label = if (isOpen) (etaLabel ?: "Open") else "Closed",
-                tone = if (isOpen) StatusTone.SUCCESS else StatusTone.NEUTRAL
+                tone = if (isOpen) StatusTone.DELIVERED else StatusTone.NEUTRAL
             )
         }
     }

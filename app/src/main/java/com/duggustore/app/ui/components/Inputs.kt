@@ -20,6 +20,9 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.OutlinedTextField
@@ -40,6 +43,7 @@ import androidx.compose.ui.unit.dp
 import com.duggustore.app.ui.theme.Dimens
 import com.duggustore.app.ui.theme.DugguTheme
 import com.duggustore.app.ui.theme.DugguType
+import com.duggustore.app.ui.theme.DugguDuration
 import com.duggustore.app.ui.theme.MotionRole
 
 // ══════════════════════════════════════════════════════════════════════════════
@@ -177,7 +181,7 @@ fun DugguTextField(
                     // perceivable without colour vision.
                     {
                         Icon(
-                            androidx.compose.material.icons.Icons.Default.Warning,
+                            androidx.compose.material.icons.Icons.Default.Filled.Warning,
                             contentDescription = "Error: $errorMessage",
                             Modifier.size(Dimens.iconSm),
                             tint = c.text.danger
@@ -229,7 +233,7 @@ fun DugguTextField(
             visible = supporting != null,
             enter = fadeIn(tween(motion.durationFor(MotionRole.STATE_CHANGE))) +
                 expandVertically(tween(motion.durationFor(MotionRole.STATE_CHANGE))),
-            exit = fadeOut(tween(motion.durationFor(MotionRole.INSTANT))) +
+            exit = fadeOut(tween(DugguDuration.INSTANT)) +
                 shrinkVertically(tween(motion.durationFor(MotionRole.STATE_CHANGE)))
         ) {
             Row(

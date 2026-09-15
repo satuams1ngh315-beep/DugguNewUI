@@ -16,6 +16,9 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.foundation.border
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -43,6 +46,7 @@ import androidx.compose.ui.unit.dp
 import com.duggustore.app.ui.theme.Dimens
 import com.duggustore.app.ui.theme.DugguTheme
 import com.duggustore.app.ui.theme.DugguType
+import com.duggustore.app.ui.theme.DugguDuration
 import com.duggustore.app.ui.theme.MotionRole
 
 // ══════════════════════════════════════════════════════════════════════════════
@@ -364,8 +368,7 @@ fun DugguDestructiveButton(
         AnimatedVisibility(
             visible = armed,
             enter = fadeIn(tween(DugguTheme.motion.durationFor(MotionRole.ELEMENT_ENTER))),
-            exit = fadeOut(tween(DugguTheme.motion.durationFor(MotionRole.INSTANT)))
-        ) {
+            exit = fadeOut(tween(DugguDuration.INSTANT))
             Text(
                 text = "Tap again to confirm",
                 style = DugguType.caption,
